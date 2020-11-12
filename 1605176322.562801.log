@@ -1,0 +1,24 @@
+23:18:49,747 tornado.access INFO 101 GET /websocket (::1) 1.22ms
+23:18:49,747 root INFO Opened new socket from ip: ::1
+23:18:49,747 root INFO Current subscribers: {'ea78dbc8-787f-44e3-8998-12530c7b989d': <parlai.chat_service.services.websocket.sockets.MessageSocketHandler object at 0x7fa1d7acb730>}
+23:18:55,781 root INFO websocket message from client: {"text": "Hi"}
+23:18:55,784 root INFO Sending new message: {'id': 'Overworld', 'text': 'Welcome to the overworld for the ParlAI messenger chatbot demo. Please type "begin" to start.', 'quick_replies': ['begin']}
+23:18:58,188 root INFO websocket message from client: {"text": "begin"}
+23:18:58,188 root INFO Received new message: {'text': 'begin', 'payload': None, 'sender': {'id': 'ea78dbc8-787f-44e3-8998-12530c7b989d'}, 'recipient': {'id': 0}}
+23:18:58,610 root INFO Sending new message: {'id': 'World', 'text': 'Welcome to the ParlAI Chatbot demo. You are now paired with a bot - feel free to send a message.Type [DONE] to finish the chat, or [RESET] to reset the dialogue history.'}
+23:19:02,664 root INFO websocket message from client: {"text": "begin"}
+23:19:02,665 root INFO Received new message: {'text': 'begin', 'payload': None, 'sender': {'id': 'ea78dbc8-787f-44e3-8998-12530c7b989d'}, 'recipient': {'id': 0}}
+23:19:04,691 root INFO Sending new message: {'id': 'TransformerGenerator', 'episode_done': False, 'text': 'hello dear , have you ever been to the united states ? it is a state in the united kingdom .', 'beam_texts': [('hello dear , have you ever been to the united states ? it is a state in the united kingdom .', -8.57252025604248), ('hello dear , have you ever been to the united states ? it is a sovereign state in north america .', -8.614399909973145), ('hello dear , have you ever been to the united states ? it is a sovereign state in the united kingdom .', -8.66982650756836), ('hello dear , have you ever been to the united states ? it is a country in the southeastern united states .', -8.82692813873291), ('hello dear , have you ever been to the united states ? it is a country in the united kingdom .', -8.925501823425293), ('hello dear , have you ever been to the united states ? it is a state in the united kingdom', -9.143509864807129), ('hello dear , have you ever been to the united states ? it is a country in the southeastern united states', -9.24997329711914), ('hello dear , have you ever been to the united states ? it is a sovereign state in north america', -9.267066955566406), ('hello dear , have you ever been to the united states ? it is a country in the southeastern region of the world', -9.294305801391602), ('hello dear , have you ever been to the united states ? it is a sovereign state in the united kingdom', -9.34038257598877)]}
+00:35:19,672 concurrent.futures ERROR exception calling callback for <Future at 0x7fa1d7ab8b50 state=finished returned tuple>
+Traceback (most recent call last):
+  File "/Users/lindsay/opt/anaconda3/envs/py38/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/chat_service_manager.py", line 675, in _done_callback
+    self._launch_overworld(agent.id)
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/chat_service_manager.py", line 361, in _launch_overworld
+    future = self.world_runner.launch_overworld(
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/world_runner.py", line 194, in launch_overworld
+    fut = self.executor.submit(_world_function)
+  File "/Users/lindsay/opt/anaconda3/envs/py38/lib/python3.8/concurrent/futures/thread.py", line 179, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown

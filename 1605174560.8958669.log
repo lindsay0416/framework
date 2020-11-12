@@ -1,0 +1,24 @@
+22:51:08,561 tornado.access INFO 101 GET /websocket (::1) 1.16ms
+22:51:08,561 root INFO Opened new socket from ip: ::1
+22:51:08,561 root INFO Current subscribers: {'a586f39f-f1b1-447a-ab38-b0f208a49ce2': <parlai.chat_service.services.websocket.sockets.MessageSocketHandler object at 0x7fb5b32cc6a0>}
+22:51:29,75 root INFO websocket message from client: {"text": "begin"}
+22:51:29,82 root INFO Sending new message: {'id': 'Overworld', 'text': 'Welcome to the overworld for the ParlAI messenger chatbot demo. Please type "begin" to start.', 'quick_replies': ['begin']}
+22:51:31,525 root INFO websocket message from client: {"text": "begin"}
+22:51:31,526 root INFO Received new message: {'text': 'begin', 'payload': None, 'sender': {'id': 'a586f39f-f1b1-447a-ab38-b0f208a49ce2'}, 'recipient': {'id': 0}}
+22:51:31,920 root INFO Sending new message: {'id': 'World', 'text': 'Welcome to the ParlAI Chatbot demo. You are now paired with a bot - feel free to send a message.Type [DONE] to finish the chat, or [RESET] to reset the dialogue history.'}
+22:51:59,606 root INFO websocket message from client: {"text": "hello world"}
+22:51:59,608 root INFO Received new message: {'text': 'hello world', 'payload': None, 'sender': {'id': 'a586f39f-f1b1-447a-ab38-b0f208a49ce2'}, 'recipient': {'id': 0}}
+22:52:02,323 root INFO Sending new message: {'id': 'TransformerGenerator', 'episode_done': False, 'text': "hello , have you ever been to the world of hello world ? it ' s an american entertainment company .", 'beam_texts': [("hello , have you ever been to the world of hello world ? it ' s an american entertainment company .", -7.3034539222717285), ("hello , have you ever been to the world of hello world ? it ' s an american television series .", -7.655916690826416), ("hello , have you ever been to the world of hello world ? it ' s an american tv series .", -7.7522125244140625), ("hello , have you ever been to the world of hello world ? it ' s an american video game .", -7.80271577835083), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in los angeles .", -7.949296951293945), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company", -7.960547924041748), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in seattle .", -8.19715404510498), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in chicago .", -8.44651985168457), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in los angeles", -8.7051362991333), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in los angeles !", -8.784127235412598), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in new york .", -8.87535285949707), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in seattle", -8.977842330932617), ("hello , have you ever been to the world of hello world ? it ' s an american entertainment company based in new york city", -9.160696029663086), ("hello , have you ever been to the world of hello world ? it ' s an american television series created by mark twain", -9.181392669677734)]}
+23:15:38,261 concurrent.futures ERROR exception calling callback for <Future at 0x7fb5b32b7ac0 state=finished returned tuple>
+Traceback (most recent call last):
+  File "/Users/lindsay/opt/anaconda3/envs/py38/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/chat_service_manager.py", line 675, in _done_callback
+    self._launch_overworld(agent.id)
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/chat_service_manager.py", line 361, in _launch_overworld
+    future = self.world_runner.launch_overworld(
+  File "/Users/lindsay/Desktop/Git/facebook_Parl/ParlAI/parlai/chat_service/core/world_runner.py", line 194, in launch_overworld
+    fut = self.executor.submit(_world_function)
+  File "/Users/lindsay/opt/anaconda3/envs/py38/lib/python3.8/concurrent/futures/thread.py", line 179, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown

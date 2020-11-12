@@ -3,6 +3,10 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
+import sys
+sys.path.append("../utility")
+from openie_utility import OpenieUtility
+from utility import Utility
 
 import json
 import websocket
@@ -10,6 +14,7 @@ import threading
 from parlai.core.params import ParlaiParser
 from parlai.scripts.interactive_web import WEB_HTML, STYLE_SHEET, FONT_AWESOME
 from http.server import BaseHTTPRequestHandler, HTTPServer
+
 
 
 SHARED = {}
@@ -37,6 +42,16 @@ class BrowserHandler(BaseHTTPRequestHandler):
             SHARED['wb'].shutdown()
         json_data = json.dumps(data)
         SHARED['ws'].send(json_data)
+
+        #do my workflow
+        print(json_data)
+        Utility.write_input_to_file(data)
+        triples = OpenieUtility.sentence_to_triple(data['text'])
+        #write triples to file 
+        Utility.write_triple_to_file(triples)
+        print(triples)
+
+
 
     def do_HEAD(self):
         """
