@@ -7,6 +7,7 @@ import sys
 sys.path.append("../utility")
 from openie_utility import OpenieUtility
 from utility import Utility
+from preprocess_utility import PreprocessUtility
 
 import json
 import websocket
@@ -45,6 +46,8 @@ class BrowserHandler(BaseHTTPRequestHandler):
 
         #do my workflow
         print(json_data)
+        #data preprocessing 
+        data = PreprocessUtility.preprocess(data)
         Utility.write_input_to_file(data)
         triples = OpenieUtility.sentence_to_triple(data['text'])
         #write triples to file 
