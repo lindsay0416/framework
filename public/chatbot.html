@@ -29,26 +29,32 @@
     <!-- CAITO CSS -->
     <link href="./css/cba_caito.css" rel="stylesheet">
 
+    <!-- Particle CSS-->
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+
 
 </head>
 
 <body>
-    <div id="cba-forSpinningDiv"></div>
-
+<div id="particles-js">
+<div id="cba-forSpinningDiv"></div>
     <div id="wrapper">
 
         <!-- Page Content -->
         <div id="cba-page-wrapper">
+
             <div class="container-fluid">
 
                 <div class="row">
                     <div class="col-lg-12" style="text-align:center">
                         <h1 class="page-header cba-maintitle-text">Self-Adaptive Conversational Agent</h1>
+
                     </div>
+
                 </div>
 
 
-                <div class="row" >
+                <div class="row">
                     <div class="col-lg-12">
 
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xx-6">
@@ -61,7 +67,8 @@
                                     <div class="form-group input-group">
                                         <input id='user-input' type="text" class="form-control" required="true">
                                         <span class="input-group-btn">
-                                            <button id='send-button' class="btn btn-default" type="button" onclick=sendMessage()>
+                                            <button id='send-button' class="btn btn-default" type="button"
+                                                    onclick=sendMessage()>
                                                 <i class="fa fa-search"></i>
                                             </button>
                                         </span>
@@ -79,11 +86,10 @@
                                     Knowledge Graph
                                 </div>
                                 <div class="panel-body">
-                                  PUT YOUR KNOWLEDGE GRAPH HERE
+                                    PUT YOUR KNOWLEDGE GRAPH HERE
                                 </div>
                             </div>
                         </div>
-
 
 
                     </div>
@@ -97,30 +103,31 @@
     </div>
     <!-- /#wrapper -->
 
+</div>
+<audio autoPlay="true" id="audio">
+    Your browser does not support the audio element.
+</audio>
 
-    <audio autoPlay="true" id="audio">
-        Your browser does not support the audio element.
-    </audio>
+<!-- jQuery -->
+<script src="./vendor/jquery/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="./vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="./vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="./vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="./dist/js/sb-admin-2.js"></script>
+<script src="./vendor/spin/spin.min.js"></script>
+<script src="./logic/spin.js"></script>
+<script src="./logic/chatbot.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="./dist/js/sb-admin-2.js"></script>
-    <script src="./vendor/spin/spin.min.js"></script>
-    <script src="./logic/spin.js"></script>
-    <script src="./logic/chatbot.js"></script>
+<!-- Particle effects -->
+<script src="./vendor/particle/particles.min.js"></script>
+<script src="./vendor/particle/app.js"></script>
 
-    <script>
-        var content = "AAMAS 2021 Demo";
-        // say(content);
-    </script>
+
 </body>
 
 </html>
