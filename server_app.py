@@ -24,6 +24,7 @@ def give_response():
         return s
     if request.method == 'POST':
         user_input = request.form['user_input']
+        # logic xxxxx
         s = "hello word"
         print(s)
         return s
