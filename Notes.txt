@@ -9,3 +9,7 @@ C:\Users\weli\LindsayAAMAS2020\framework\venv\Scripts>pip install torch===1.4.0 
 pip install torchtext
 
 https://pypi.org/project/torchtext/
+
+install Flask
+https://flask.palletsprojects.com/en/master/installation/
+pip install Flask

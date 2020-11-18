@@ -20,9 +20,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d01c1884-0af6-4174-a1c9-05c9b700e980" name="Default Changelist" comment="git ignore">
-      <change afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/chatbot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/cba_caito.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chatbot-css/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chatbot-css/reply.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chatbot-css/says.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chatbot-css/setup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chatbot-css/typing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/sb-admin-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/sb-admin-2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/sb-admin-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/sb-admin-2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/1983.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/resampler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sb-admin-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/testUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/testWDSClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/testWebSocketClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/testWebSocketClient_speak.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/videoscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logic/chatbot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logic/spin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/extras.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/spinning.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_extras.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_spinning.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/metisMenu/metisMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/metisMenu/metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/metisMenu/metisMenu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/metisMenu/metisMenu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/spin/spin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +127,47 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public\vendor" />
+      <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public" />
+      <recent name="C:\Users\weli\LindsayAAMAS2020\framework" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="framework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server_app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605661478868</updated>
-      <workItem from="1605661481198" duration="6129000" />
+      <workItem from="1605661481198" duration="11750000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore">
       <created>1605662296737</created>
@@ -89,6 +208,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2186" y="38" key="#Inspections" timestamp="1605729436995">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state x="2186" y="38" key="#Inspections/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605729436995" />
+    <state x="2340" y="115" key="FileChooserDialogImpl" timestamp="1605728919412">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state x="2340" y="115" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605728919412" />
+    <state width="742" height="241" key="GridCell.Tab.0.bottom" timestamp="1605729949267">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state width="742" height="241" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605729949267" />
+    <state width="742" height="241" key="GridCell.Tab.0.center" timestamp="1605729949267">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state width="742" height="241" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605729949267" />
+    <state width="742" height="241" key="GridCell.Tab.0.left" timestamp="1605729949267">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state width="742" height="241" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605729949267" />
+    <state width="742" height="241" key="GridCell.Tab.0.right" timestamp="1605729949267">
+      <screen x="1920" y="0" width="1280" height="720" />
+    </state>
+    <state width="742" height="241" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.720@1920.0.1280.720" timestamp="1605729949267" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1605661639755">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -97,5 +240,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1605682238141" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/chatbot.html</url>
+          <line>63</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/framework$server_app.coverage" NAME="server_app Coverage Results" MODIFIED="1605729949249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
