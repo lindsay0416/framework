@@ -24,7 +24,7 @@
     <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Oswald Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="./vendor/font-awesome/css/Oswald.css" rel="stylesheet" type="text/css">
 
     <!-- CAITO CSS -->
     <link href="./css/cba_caito.css" rel="stylesheet">
@@ -32,12 +32,14 @@
     <!-- Particle CSS-->
     <link rel="stylesheet" media="screen" href="css/particle.css">
 
+    <!-- Vis net work CSS -->
+    <link rel="stylesheet" media="screen" href="css/vis_network.css">
 
 </head>
 
 <body>
 <div id="particles-js">
-<div id="cba-forSpinningDiv"></div>
+    <div id="cba-forSpinningDiv"></div>
     <div id="wrapper">
 
         <!-- Page Content -->
@@ -84,8 +86,55 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading cba-mainicon-text">
                                     Knowledge Graph
+
+
+                                    <input type="button" onclick="addNode()" value="add node dynamically"/>
+                                    <!--
+                                    <br/>
+                                    <input
+                                            type="button"
+                                            onclick="changeNode1()"
+                                            value="change node 1's color dynamically"
+                                    />
+                                    <br/>
+                                    <input
+                                            type="button"
+                                            onclick="removeRandomNode()"
+                                            value="remove a random Node"
+                                    />
+                                    <br/>
+                                    <input type="button" onclick="resetAllNodes()" value="reload all nodes"/>
+                                    <br/>
+                                    <input
+                                            type="button"
+                                            onclick="resetAllNodesStabilize()"
+                                            value="reload all nodes and stabilize"
+                                    />
+                                    <br/>
+
+                                    <h4>setOptions (change the global options):</h4>
+                                    <input
+                                            type="button"
+                                            onclick="changeOptions()"
+                                            value="change the global options"
+                                    /><br/>
+
+                                    <h4>setData (reinitialize the data):</h4>
+                                    <input
+                                            type="button"
+                                            onclick="setTheData()"
+                                            value="setData. This stabilizes again if stabilization is true."
+                                    /><br/>
+
+                                    <h4>Cleanly destroy the network and restart it:</h4>
+                                    <input
+                                            type="button"
+                                            onclick="resetAll()"
+                                            value="Destroy the network and restart it."
+                                    /><br/>
+                                    -->
                                 </div>
-                                <div class="panel-body">
+                                <div class="panel-body" id="mynetwork">
                                     PUT YOUR KNOWLEDGE GRAPH HERE
                                 </div>
                             </div>
@@ -104,9 +153,7 @@
     <!-- /#wrapper -->
 
 </div>
-<audio autoPlay="true" id="audio">
-    Your browser does not support the audio element.
-</audio>
+
 
 <!-- jQuery -->
 <script src="./vendor/jquery/jquery.min.js"></script>
@@ -127,6 +174,11 @@
 <script src="./vendor/particle/particles.min.js"></script>
 <script src="./vendor/particle/app.js"></script>
 
+<!-- Knowledge Graph - Vis.js -->
+<script src="./vendor/visjs/vis-network.min.js"></script>
+
+<!-- Knowledge Graph - graph.js -->
+<script src="./logic/graph.js"></script>
 
 </body>
 

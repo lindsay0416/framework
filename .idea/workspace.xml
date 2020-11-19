@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d01c1884-0af6-4174-a1c9-05c9b700e980" name="Default Changelist" comment="git ignore">
-      <change afterPath="$PROJECT_DIR$/public/Test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/particle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/particles.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/particle/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/particle/particles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/particle/particles.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/vis_network.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logic/graph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/font-awesome/css/Oswald.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/visjs/vis-network.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vis_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/chatbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/chatbot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/cba_caito.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/cba_caito.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/particle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/particle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -65,6 +66,10 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public\vendor\font-awesome\css" />
+      <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public\vendor\visjs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public\css" />
       <recent name="C:\Users\weli\LindsayAAMAS2020\framework\public" />
@@ -111,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605661478868</updated>
       <workItem from="1605661481198" duration="16118000" />
-      <workItem from="1605738721904" duration="1548000" />
+      <workItem from="1605738721904" duration="7451000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore">
       <created>1605662296737</created>
