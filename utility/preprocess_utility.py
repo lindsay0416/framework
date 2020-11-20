@@ -1,4 +1,5 @@
 import nltk
+
 from lxml import etree
 import os
 import os.path
@@ -9,6 +10,7 @@ from gensim.models import CoherenceModel
 import datetime
 from numpy import *
 import matplotlib.pyplot as plt
+
 
 class PreprocessUtility:
 

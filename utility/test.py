@@ -1,5 +1,5 @@
-# from openie_utility import OpenieUtility
-# from utility import Utility
+from openie_utility import OpenieUtility
+from utility import Utility
 from preprocess_utility import PreprocessUtility
 
 def main():
