@@ -1,0 +1,813 @@
+,prefix,input_text,target_text
+0,webNLG,Aarhus | leaderName | Jacob_Bundsgaard,The leader of Aarhus is Jacob Bundsgaard.
+1,webNLG,"Aarhus_Airport | cityServed | ""Aarhus, Denmark""","The Aarhus is the airport of Aarhus, Denmark."
+2,webNLG,"Aarhus_Airport | cityServed | ""Aarhus, Denmark""","Aarhus Airport serves the city of Aarhus, Denmark."
+3,webNLG,Aarhus_Airport | cityServed | Aarhus,Aarhus airport serves the city of Aarhus.
+4,webNLG,Aarhus_Airport | elevationAboveTheSeaLevel_(in_metres) | 25.0,Aarhus Airport is 25 metres above sea level.
+5,webNLG,Aarhus_Airport | elevationAboveTheSeaLevel_(in_metres) | 25.0,Aarhus airport is at an elevation of 25 metres above seal level.
+6,webNLG,Aarhus_Airport | elevationAboveTheSeaLevel_(in_metres) | 25.0,Aarhus Airport is 25.0 metres above the sea level.
+7,webNLG,Aarhus_Airport | location | Tirstrup,Aarhus Airport is located in Tirstrup.
+8,webNLG,Aarhus_Airport | location | Tirstrup,The location of Aarhus Airport is Tirstrup.
+9,webNLG,"Aarhus_Airport | operatingOrganisation | ""Aarhus Lufthavn A/S""",Aarhus Airport is operated by Aarhus Lufthavn A/S.
+10,webNLG,"Aarhus_Airport | operatingOrganisation | ""Aarhus Lufthavn A/S""",Aarhus Lufthavn A/S is the operation organisation of Aarhus Airport.
+11,webNLG,Aarhus_Airport | operatingOrganisation | Aktieselskab,Aktieselskab is the operating organisation for Aarhus Airport.
+12,webNLG,Aarhus_Airport | operatingOrganisation | Aktieselskab,Aktieselskab operates Aarhus Airport.
+13,webNLG,Aarhus_Airport | operatingOrganisation | Aktieselskab,Aarhus Airport is operated by the Aktieselkab organisation.
+14,webNLG,Aarhus_Airport | runwayLength | 2702.0,Aarhus Airport's runway length is 2702.0.
+15,webNLG,Aarhus_Airport | runwayLength | 2702.0,The Aarhus Airport has a runway length of 2702.0.
+16,webNLG,Aarhus_Airport | runwayLength | 2776.0,Aarhus Airport runway length is 2776.0.
+17,webNLG,Aarhus_Airport | runwayLength | 2776.0,Aarhus Airport has a runway length of 2776.0.
+18,webNLG,Aarhus_Airport | runwayLength | 2776.0,The length of the runway at Aarhus Airport is 2776.0.
+19,webNLG,Aarhus_Airport | runwayLength | 2777.0,The runway length at Aarhus Airport is 2777.0 meters.
+20,webNLG,Aarhus_Airport | runwayLength | 2777.0,The runway length at Aarhus airport is 2777.0.
+21,webNLG,"Aarhus_Airport | runwayName | ""10L/28R""",Aarhus Airport runway name is 10L/28R.
+22,webNLG,"Aarhus_Airport | runwayName | ""10L/28R""",10L/28R is the runway name of the Aarhus Airport.
+23,webNLG,"Aarhus_Airport | runwayName | ""10L/28R""",The runway name of Aarhus Airport is 10L/28R.
+24,webNLG,"Aarhus_Airport | runwayName | ""10R/28L""","The runway name at Aarhus Airport is ""10R/28L""."
+25,webNLG,"Aarhus_Airport | runwayName | ""10R/28L""","10R/28L is the runway name at Aarhus airport,."
+26,webNLG,"Aarhus_Airport | runwayName | ""10R/28L""",The runway name of Aarhus Airport is 10R/28L.
+27,webNLG,"Abilene,_Texas | country | United_States","Abilene, Texas is in the United States."
+28,webNLG,"Abilene,_Texas | country | United_States",Abilene Texas is in the United States.
+29,webNLG,"Abilene,_Texas | country | United_States","Abilene, Texas is located in the United States."
+30,webNLG,"Abilene,_Texas | isPartOf | Jones_County,_Texas","Abilene, Texas is part of Jones County, Texas."
+31,webNLG,"Abilene,_Texas | isPartOf | Jones_County,_Texas","Abilene is part of Jones County, Texas."
+32,webNLG,"Abilene,_Texas | isPartOf | Taylor_County,_Texas","Abilene, Texas is part of Taylor County,Texas."
+33,webNLG,"Abilene,_Texas | isPartOf | Taylor_County,_Texas","Abilene is a part of Taylor County, Texas."
+34,webNLG,"Abilene,_Texas | isPartOf | Taylor_County,_Texas","Abilene, Texas is part of Taylor County, Texas."
+35,webNLG,"Abilene,_Texas | isPartOf | Texas","Abilene, Texas is part of Texas."
+36,webNLG,"Abilene,_Texas | isPartOf | Texas",Abilene is part of Texas.
+37,webNLG,Abilene_Regional_Airport | 1st_runway_LengthFeet | 3678,The length of the 1st runway at Abilene Regional airport is 3678 feet.
+38,webNLG,Abilene_Regional_Airport | 1st_runway_SurfaceType | Asphalt,The first runway at Abilene Regional Airport is made from asphalt.
+39,webNLG,Abilene_Regional_Airport | 1st_runway_SurfaceType | Asphalt,The 1st runway at Abilene Regional Airport is made of Asphalt.
+40,webNLG,Abilene_Regional_Airport | 3rd_runway_LengthFeet | 7202,"The third runway at Abilene Regional Airport is 7,202 feet long."
+41,webNLG,Abilene_Regional_Airport | 3rd_runway_LengthFeet | 7202,The 3rd runway at Abilene Regional airport is 7202 feet.
+42,webNLG,Abilene_Regional_Airport | 3rd_runway_LengthFeet | 7202,The Abilene Regional Airport's 3rd runway length is ft is 7202.
+43,webNLG,"Abilene_Regional_Airport | ICAO_Location_Identifier | ""KABI""",Abilene Regional Airport ICAO Location Identifier is KABI.
+44,webNLG,"Abilene_Regional_Airport | ICAO_Location_Identifier | ""KABI""",KABI is the ICAO location identifier of Abilene Regional Airport.
+45,webNLG,"Abilene_Regional_Airport | ICAO_Location_Identifier | ""KABI""",The ICAO Location Identifier of Abilene Regional Airport is KABI.
+46,webNLG,Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546,Abilene Regional Airport elevation above the sea level in metres is 546.
+47,webNLG,Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546,The Abilene Regional Airport is 546 metres above sea level.
+48,webNLG,Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546,Abilene Regional Airport is located 546 metres above sea level.
+49,webNLG,"Abilene_Regional_Airport | locationIdentifier | ""ABI""",The location identifier for Abilene Regional airport is ABI.
+50,webNLG,"Abilene_Regional_Airport | locationIdentifier | ""ABI""","The Abilene Regional Airport's location id is ""ABI""."
+51,webNLG,"Abilene_Regional_Airport | locationIdentifier | ""ABI""",The location Identifier of Abilene Regional Airport is ABI.
+52,webNLG,Abilene_Regional_Airport | runwayLength | 1121.0,"The runway length of Abilene Regional Airport is 1,121."
+53,webNLG,Abilene_Regional_Airport | runwayLength | 1121.0,Abilene Regional airport has a runway length of 1121.0.
+54,webNLG,Abilene_Regional_Airport | runwayLength | 1121.0,The runway length of Abilene Regional Airport is 1121.0.
+55,webNLG,Abilene_Regional_Airport | runwayLength | 2194.0,The runway length of Abilene Regional Airport is 2194.0.
+56,webNLG,Abilene_Regional_Airport | runwayLength | 2195.0,"The runway length of Abilene Regional Airport is 2,195."
+57,webNLG,Abilene_Regional_Airport | runwayLength | 2195.0,The runway length of Abilene Regional Airport is 2195.0.
+58,webNLG,"Abilene_Regional_Airport | runwayName | ""17L/35R""",Abilene Regional Airport runway name is 17L/35R.
+59,webNLG,"Abilene_Regional_Airport | runwayName | ""17L/35R""",17L/35R is the runway name of Abilene Regional Airport.
+60,webNLG,"Abilene_Regional_Airport | runwayName | ""17L/35R""",Abilene Regional Airport has the runway name 17L/35R.
+61,webNLG,"Abilene_Regional_Airport | runwayName | ""17R/35L""",17R/35L is the runway name at Abilene Regional airport.
+62,webNLG,"Abilene_Regional_Airport | runwayName | ""17R/35L""",The name of the runway at Abilene Regional Airport is 17R/35L.
+63,webNLG,"Abilene_Regional_Airport | runwayName | ""17R/35L""",The runway name of Abilene Regional Airport is 17R/35L.
+64,webNLG,Adirondack_Regional_Airport | 1st_runway_LengthFeet | 6573,"The length of the first runway at Adirondack Regional Airport is 6,573 feet."
+65,webNLG,Adirondack_Regional_Airport | 1st_runway_LengthFeet | 6573,6573 feet is the length of the first runway at Adirondack Regional Airport.
+66,webNLG,Adirondack_Regional_Airport | 1st_runway_LengthFeet | 6573,The 1st runway length in feet of Adirondack Regional Airport is 6573.
+67,webNLG,"Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York","Lake Placid, N.Y. is served by the Adirondack Regional Airport."
+68,webNLG,"Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York","Adirondack Regional Airport serves the city of Lake Placid, New York."
+69,webNLG,"Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York","Adirondack Regional Airport serves the city of Saranac Lake, New York."
+70,webNLG,Adirondack_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 507,Adirondack Regional Airport is 507 metres above sea level.
+71,webNLG,"Adirondack_Regional_Airport | location | Harrietstown,_New_York","Adirondack Regional airport is located at Harrietstown, New York."
+72,webNLG,"Adirondack_Regional_Airport | location | Harrietstown,_New_York","Adirondack Regional Airport is located in Harrietstown, New York."
+73,webNLG,"Adirondack_Regional_Airport | locationIdentifier | ""SLK""",Adirondack Regional Airport location idenitifier is SLK.
+74,webNLG,"Adirondack_Regional_Airport | locationIdentifier | ""SLK""",SLK is the I.D. of the Adirondack Regional Airport.
+75,webNLG,"Adirondack_Regional_Airport | locationIdentifier | ""SLK""",The Adirondack Regional Airport location identifier is SLK.
+76,webNLG,Adirondack_Regional_Airport | runwayLength | 1219.0,"The runway length of Adirondack Regional Airport is 1,219."
+77,webNLG,Adirondack_Regional_Airport | runwayLength | 1219.0,The runway length at Adirondack Regional Airport is 1219.0.
+78,webNLG,Adirondack_Regional_Airport | runwayLength | 1219.0,The runway length of Adirondack Regional Airport is 1219.0.
+79,webNLG,Adirondack_Regional_Airport | runwayLength | 2003.0,The runway length of Adirondack Regional Airport is 2003.0.
+80,webNLG,Adirondack_Regional_Airport | runwayLength | 2003.0,The length of the runway at Adirondack Regional Airport is 2003.0.
+81,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | elevationAboveTheSeaLevel_(in_metres) | 610.0,Adolfo Suárez Madrid-Barajas Airport has an elevation of 610.0 metres above sea level.
+82,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | elevationAboveTheSeaLevel_(in_metres) | 610.0,Adolfo Suárez Madrid–Barajas Airport is elevated 610 metres above sea level.
+83,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas,Adolfo Suárez Madrid–Barajas Airport is in Alcobendas.
+84,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas,Adolfo Suárez Madrid Barajas Airport is found in Alcobendas.
+85,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas,Adolfo Suárez Madrid–Barajas Airport is located in Alcobendas.
+86,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid,Adolfo Suárez Madrid–Barajas Airport is found in Madrid.
+87,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid,The Adolfo Suárez Madrid–Barajas Airport is in Madrid.
+88,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid,Adolfo Suarez Madrid-Barajas Aiport is located in Madrid.
+89,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama,Adolfo Suárez Madrid–Barajas Airport can be found in Paracuellos de Jarama.
+90,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama,Adolfo Suarez Madrid-Barajas airport is located at Paracuellos de Jarama.
+91,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama,The Adolfo Suárez Madrid–Barajas Airport is in Paracuellos de Jarama.
+92,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes,Adolfo Suárez Madrid–Barajas Airport is found in San Sebastián de los Reyes.
+93,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes,Adolfo Suarez Madrid- Barajas airport is located at San Sebastian de los Reyes.
+94,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes,The Adolfo Suárez Madrid–Barajas Airport is in San Sebastián de los Reyes.
+95,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | operatingOrganisation | ENAIRE,The Adolfo Suárez Madrid–Barajas Airport is operated by ENAIRE.
+96,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | operatingOrganisation | ENAIRE,ENAIRE is the operating organisation for Adolfo Suarez Madrid-Barajas airport.
+97,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | operatingOrganisation | ENAIRE,Adolfo Suarez Madrid-Barajas Airport is operated by ENAIRE.
+98,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0,"The runway length of Adolfo Suárez Madrid–Barajas Airport is 3,500."
+99,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0,The runway length at Adolfo Suarez Madrid-Barajas airport is 3500.0.
+100,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0,The Adolfo Suárez Madrid–Barajas Airport's runway length is 3500.
+101,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4100.0,"The runway length of Adolfo Suárez Madrid–Barajas Airport is 4,100."
+102,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4100.0,The runway length of Adolfo Suarez Madrid-Barajas airport is 4100.0.
+103,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4100.0,The length of the runway at Adolfo Suarez Madrid Barajas Airport is 4100.0.
+104,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4349.0,"The runway length of Adolfo Suárez Madrid–Barajas Airport is 4,349."
+105,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4349.0,Adolfo Suárez Madrid–Barajas Airport has a runway that is 4349 metres long.
+106,webNLG,Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4349.0,The runway length of Adolfo Suarez Madrid-Barajas Airport is 4349.0.
+107,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""14L/32R""",Adolfo Suárez Madrid-Barajas Airport runway name is 14L/32R.
+108,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""14L/32R""",The Adolfo Suárez Madrid–Barajas Airport runway name is 14L/32R.
+109,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""14L/32R""",14L/32R is the runway name of Adofo Suárez Madrid-Barajas Airport.
+110,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""14R/32L""",14R/32L is the name of the runway for Adolfo Suárez Madrid–Barajas Airport.
+111,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""14R/32L""",14R/32L is the runway name of Adolfo Suárez Madrid-Barajas Airport.
+112,webNLG,"Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | ""18R/36L""",18R/36L is the runway name of the Adolfo Suárez Madrid-Barajas Airport.
+113,webNLG,Afonso_Pena_International_Airport | elevationAboveTheSeaLevel_(in_feet) | 2988,Afonso Pena International Airport is elevated 2988 feet above sea level.
+114,webNLG,Afonso_Pena_International_Airport | elevationAboveTheSeaLevel_(in_feet) | 2988,Afonso Pena International Airport has an elevation above the sea level (in feet) of 2988.
+115,webNLG,Afonso_Pena_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 911.0,Afonso Pena International airport is located 911 metres above sea level.
+116,webNLG,Afonso_Pena_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 911.0,Afonso Pena International Airport has the elevation of 911 meters above the sea level.
+117,webNLG,Afonso_Pena_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 911.0,Afonso Pena International Airport is 911.0 metres above sea level.
+118,webNLG,Afonso_Pena_International_Airport | location | São_José_dos_Pinhais,The location of Afonso Pena International airport is Sao Jose dos Pinhais.
+119,webNLG,Afonso_Pena_International_Airport | location | São_José_dos_Pinhais,Afonso Pena International Airport is located in São José dos Pinhais.
+120,webNLG,Afonso_Pena_International_Airport | location | São_José_dos_Pinhais,Afonso Pena International Airport is located in Sao Jose dos Pinhais.
+121,webNLG,Afonso_Pena_International_Airport | operatingOrganisation | Infraero,The operating organization for Afonso Pena International Airport is Infraero.
+122,webNLG,Afonso_Pena_International_Airport | operatingOrganisation | Infraero,Afonso Pena International Airport is operated by Infraero.
+123,webNLG,Afonso_Pena_International_Airport | runwayLength | 1800.0,The runway length at Afonso Pena International airport is 1800.0.
+124,webNLG,Afonso_Pena_International_Airport | runwayLength | 1800.0,The runway at Afonso Pena International Airport is 1800 meters long.
+125,webNLG,Afonso_Pena_International_Airport | runwayLength | 1800.0,The runway length of Afonso Pena International Airport is 1800.0.
+126,webNLG,Afonso_Pena_International_Airport | runwayLength | 2215.0,Afonso Pena International Airport runway length is 2215.0.
+127,webNLG,Afonso_Pena_International_Airport | runwayLength | 2215.0,Afonso Pena International Airport has a runway length of 2215.0.
+128,webNLG,Afonso_Pena_International_Airport | runwayLength | 2215.0,The runway length of Afonso Pena International Airport is 2215.0.
+129,webNLG,"Afonso_Pena_International_Airport | runwayName | ""11/29""",Afonso Pena International Airport has the runway name 11/29.
+130,webNLG,"Afonso_Pena_International_Airport | runwayName | ""15/33""",The runway name of Afonso Pena International Airport is 15/33.
+131,webNLG,"Afonso_Pena_International_Airport | runwayName | ""15/33""",15/33 is the runway name at Afonso Pena International airport.
+132,webNLG,"Afonso_Pena_International_Airport | runwayName | ""15/33""","The Afonso Pena International Airport's runway name is ""15/33""."
+133,webNLG,"Agra_Airport | IATA_Location_Identifier | ""AGR""",Agra Airport IATA Location Identifier is AGR.
+134,webNLG,"Agra_Airport | IATA_Location_Identifier | ""AGR""",AGR is the IATA I.D. of the Agra Airport.
+135,webNLG,"Agra_Airport | IATA_Location_Identifier | ""AGR""",AGR is the ATA Location Identifier for Agra Airport.
+136,webNLG,"Agra_Airport | ICAO_Location_Identifier | ""VIAG""",The location identifier for Agra Airport is VIAG.
+137,webNLG,"Agra_Airport | ICAO_Location_Identifier | ""VIAG""","The Agra Airport's ICAO location identifier is ""VIAG""."
+138,webNLG,"Agra_Airport | ICAO_Location_Identifier | ""VIAG""",The ICAO Location Identifier of Agra Airport is VIAG.
+139,webNLG,Agra_Airport | elevationAboveTheSeaLevel_(in_metres) | 167.94,Agra Airport is elevated 167.94 metres above sea level.
+140,webNLG,Agra_Airport | elevationAboveTheSeaLevel_(in_metres) | 167.94,The elevation above the sea level (in metres) of Agra Airport is 167.94.
+141,webNLG,Agra_Airport | location | Agra,Agra Airport is in Agra.
+142,webNLG,Agra_Airport | location | Agra,Agra airport is located in Agra.
+143,webNLG,Agra_Airport | location | India,Agra Airport is in India.
+144,webNLG,Agra_Airport | location | India,Agra airport is located in India.
+145,webNLG,Agra_Airport | location | Uttar_Pradesh,Agra Airport is in Uttar Pradesh.
+146,webNLG,Agra_Airport | location | Uttar_Pradesh,Agra Airport is located in Uttar Pradesh.
+147,webNLG,"Agra_Airport | nativeName | ""Kheria Air Force Station""",Kheria Air Force Station is the native name of Agra Airport.
+148,webNLG,"Agra_Airport | nativeName | ""Kheria Air Force Station""",The native name of Agra Airport is Kheria Air Force Station.
+149,webNLG,Agra_Airport | operatingOrganisation | Airports_Authority_of_India,The Airports Authority of India is the operating organisation of Agra Airport.
+150,webNLG,Agra_Airport | operatingOrganisation | Airports_Authority_of_India,Agra Airport is operated by the Airports Authority of India.
+151,webNLG,Agra_Airport | operatingOrganisation | Indian_Air_Force,The operating organization for Agra Airport is the Indian Air Force.
+152,webNLG,Agra_Airport | operatingOrganisation | Indian_Air_Force,The Indian Air Force operates the Agra Airport.
+153,webNLG,Agra_Airport | operatingOrganisation | Indian_Air_Force,Agra Airport is operated by the Indian Air Force.
+154,webNLG,Agra_Airport | runwayLength | 1818.0,1818 is the length of the runway of Agra Airport.
+155,webNLG,Agra_Airport | runwayLength | 1818.0,The length of the runway at Agra Airport is 1818.0.
+156,webNLG,Agra_Airport | runwayLength | 2743.0,Agra Airport's runway length is 2743.0.
+157,webNLG,Al-Taqaddum_Air_Base | elevationAboveTheSeaLevel_(in_metres) | 84.0,Al-Taqaddum Air Base is 84 metres above sea level.
+158,webNLG,Al-Taqaddum_Air_Base | elevationAboveTheSeaLevel_(in_metres) | 84.0,Al Taqaddum Air Base is 84 metres above sea level.
+159,webNLG,Al-Taqaddum_Air_Base | elevationAboveTheSeaLevel_(in_metres) | 84.0,The elevation above the sea level (in metres) of Al-Taqaddum Air Base is 84.0.
+160,webNLG,Al-Taqaddum_Air_Base | location | Habbaniyah,Al Taqaddum Air Base is located in Habbaniyah.
+161,webNLG,Al-Taqaddum_Air_Base | location | Habbaniyah,The location of Al-Taqaddum Air Base is Habbaniyah.
+162,webNLG,"Al-Taqaddum_Air_Base | locationIdentifier | ""MAT""",The location identifier for Al-Taqaddum air base is MAT.
+163,webNLG,"Al-Taqaddum_Air_Base | locationIdentifier | ""MAT""",The location identifier of Al Taqaddum Air Base is MAT.
+164,webNLG,Al-Taqaddum_Air_Base | runwayLength | 4019.0,"The runway length of Al-Taqaddum Air Base is 4,019."
+165,webNLG,Al-Taqaddum_Air_Base | runwayLength | 4019.0,The runway length of Al-Taqaddum air base is 4019.0.
+166,webNLG,Al-Taqaddum_Air_Base | runwayLength | 4019.0,The runway length of Al Taqaddum Air Base is 4019.0.
+167,webNLG,"Al_Asad_Airbase | ICAO_Location_Identifier | ""ORAA""","ORAA is the ICAO location identifier of Al Asad Airbase,."
+168,webNLG,"Al_Asad_Airbase | ICAO_Location_Identifier | ""ORAA""",The ICAO Location Identifier of Al Asad Airbase is ORAA.
+169,webNLG,Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618,Al Asad Airbase is 618 feet above sea level.
+170,webNLG,Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618,The Al Asad Airbase is 618 ft above sea level.
+171,webNLG,Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618,Al Asad Airbase has an elevation above the sea level (in feet) of 618.
+172,webNLG,"Al_Asad_Airbase | location | ""Al Anbar Province, Iraq""","The Al Asad Airbase is situated in the Al Anbar Province, Iraq."
+173,webNLG,"Al_Asad_Airbase | location | ""Al Anbar Province, Iraq""","Al Asad airbase is located at Al Anbar Province, Iraq."
+174,webNLG,"Al_Asad_Airbase | location | ""Al Anbar Province, Iraq""","Al Asad Airbase is located in Al Anbar Province, Iraq."
+175,webNLG,Al_Asad_Airbase | location | Iraq,Al Asad Airbase is found in Iraq.
+176,webNLG,Al_Asad_Airbase | location | Iraq,The Al Asad Airbase is in Iraq.
+177,webNLG,Al_Asad_Airbase | location | Iraq,Al Asad Airbase is in Iraq.
+178,webNLG,Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force,Al Asad Airbase is operated by the United States Air Force.
+179,webNLG,Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force,The United States Air Force is the operating organisation for Al Asad airbase.
+180,webNLG,Al_Asad_Airbase | runwayLength | 3078.48,The runway length of Al Asad Airbase is 3078.48.
+181,webNLG,Al_Asad_Airbase | runwayLength | 3078.48,Al Asad Airbase has a runway length of 3078.48.
+182,webNLG,Al_Asad_Airbase | runwayLength | 3090.0,The runway length of Al Asad Airbase is 3090 meters.
+183,webNLG,Al_Asad_Airbase | runwayLength | 3090.0,The runway length at Al Asad airbase is 3090.0.
+184,webNLG,Al_Asad_Airbase | runwayLength | 3090.0,Al Asad Airbase's runway length is 3090.0.
+185,webNLG,Al_Asad_Airbase | runwayLength | 3990.0,"The runway length of Al Asad Airbase is 3,990."
+186,webNLG,Al_Asad_Airbase | runwayLength | 3990.0,The runway length of Al Asad Airbase is 3990.0.
+187,webNLG,Al_Asad_Airbase | runwayLength | 3990.0,The Al Asad Airbase has a runway length of 3990.0.
+188,webNLG,Al_Asad_Airbase | runwayLength | 3992.88,"The runway length of Al Asad Airbase is 3,992.88."
+189,webNLG,Al_Asad_Airbase | runwayLength | 3992.88,3992.88 is the length of the runway at Al Asad Airbase.
+190,webNLG,"Al_Asad_Airbase | runwayName | ""08/26""",''08/26'' is the runway name at Al Asad Airbase.
+191,webNLG,"Al_Asad_Airbase | runwayName | ""08/26""",08/26 is the runway name of the Al Asad Airbase.
+192,webNLG,"Al_Asad_Airbase | runwayName | ""08/26""",The runway name of Al Asad Airbase is 08/26.
+193,webNLG,"Al_Asad_Airbase | runwayName | ""09L/27R""",The runway name of Al Asad Airbase is 09L/27R.
+194,webNLG,"Al_Asad_Airbase | runwayName | ""09L/27R""","The AI Asad Airbase's runway name is ""09L/27R""."
+195,webNLG,"Al_Asad_Airbase | runwayName | ""09R/27L""",09R/27L is the runway name at Al Asad airbase.
+196,webNLG,"Al_Asad_Airbase | runwayName | ""09R/27L""",The name of the runway at al Asad Airbase is 09R/27L.
+197,webNLG,"Al_Asad_Airbase | runwayName | ""09R/27L""",Al Asad Airbase has the runway name 09R/27L.
+198,webNLG,Alcobendas | country | Spain,Alcobendas is located in Spain.
+199,webNLG,Alcobendas | country | Spain,Alcobendas is in Spain.
+200,webNLG,Alcobendas | isPartOf | Community_of_Madrid,Alcobendas is part of Community of Madrid.
+201,webNLG,Alcobendas | isPartOf | Community_of_Madrid,Alcobendas is part of the community of Madrid.
+202,webNLG,Alcobendas | leaderParty | People's_Party_(Spain),The leader party at Alcobendas is the Peoples Party (Spain).
+203,webNLG,"Alderney | capital | Saint_Anne,_Alderney",Saint Anne is the capital of Alderney.
+204,webNLG,Alderney | language | English_language,The main language spoken on Alderney is English.
+205,webNLG,Alderney | language | English_language,The English language is spoken in Alderney.
+206,webNLG,Alderney | language | English_language,Alderney uses the English language.
+207,webNLG,Alderney | leaderName | Elizabeth_II,Alderney's leader name is Elizabeth II.
+208,webNLG,Alderney | leaderName | Elizabeth_II,Aldernay's leader is Elizabeth II.
+209,webNLG,Alderney | leaderName | Elizabeth_II,The leader's name of Alderney is Elizabeth II.
+210,webNLG,Alderney_Airport | 1st_runway_SurfaceType | Asphalt,The first runway at Alderney Airport is made of asphalt.
+211,webNLG,Alderney_Airport | 1st_runway_SurfaceType | Asphalt,The 1st runway at Alderney airport has an asphalt surface.
+212,webNLG,Alderney_Airport | 1st_runway_SurfaceType | Asphalt,The 1st runway at Alderney Airport is made from Asphalt.
+213,webNLG,Alderney_Airport | 1st_runway_SurfaceType | Poaceae,The surface of the 1st runway at Alderney airport is poaceae.
+214,webNLG,Alderney_Airport | 1st_runway_SurfaceType | Poaceae,The 1st runway at Alderney Airport is made from Poaceae.
+215,webNLG,Alderney_Airport | cityServed | Alderney,The Alderney Airport serves Alderney.
+216,webNLG,Alderney_Airport | cityServed | Alderney,Alderney Airport serves the city of Alderney.
+217,webNLG,Alderney_Airport | elevationAboveTheSeaLevel_(in_metres) | 88.0,Alderney Airport is 88 metres above sea level.
+218,webNLG,Alderney_Airport | elevationAboveTheSeaLevel_(in_metres) | 88.0,The Alderney Airport elevation above the sea level (in meters) is 88.
+219,webNLG,Alderney_Airport | runwayLength | 497.0,Alderney Airport has a runway length of 497.0.
+220,webNLG,Alderney_Airport | runwayLength | 497.0,The runway length of Alderney Airport is 497.0.
+221,webNLG,Alderney_Airport | runwayLength | 733.0,The Alderney Airport runway has a length of 733.0.
+222,webNLG,Alderney_Airport | runwayLength | 877.0,The runway length of Alderney Airport is 877.
+223,webNLG,Alderney_Airport | runwayLength | 877.0,Alderney Airport's runway has a length of 877.0.
+224,webNLG,Alderney_Airport | runwayLength | 877.0,The runway length of Alderney Airport is 877.0.
+225,webNLG,"Alderney_Airport | runwayName | ""03/21""",Alderney Airport runway name is 03/21.
+226,webNLG,"Alderney_Airport | runwayName | ""03/21""",The runway name of Alderney Airport is 03/21.
+227,webNLG,"Alderney_Airport | runwayName | ""03/21""",The runway at Alderney Airport is named 03/21.
+228,webNLG,"Alderney_Airport | runwayName | ""08/26""",08/26 is the runway name of Alderney Airport.
+229,webNLG,"Alderney_Airport | runwayName | ""08/26""",The runway name of Alderney Airport is 08/26.
+230,webNLG,Allama_Iqbal_International_Airport | cityServed | Lahore,Allama Iqbal International Airport serves the city of Lahore.
+231,webNLG,Allama_Iqbal_International_Airport | cityServed | Lahore,The city of Lahore is served by Allama Iqbal International airport.
+232,webNLG,Allama_Iqbal_International_Airport | location | Pakistan,Allama Iqbal International airport is located in Pakistan.
+233,webNLG,"Allama_Iqbal_International_Airport | location | Punjab,_Pakistan","Allama Iqbal International Airport is found in Punjab, Pakistan."
+234,webNLG,"Allama_Iqbal_International_Airport | location | Punjab,_Pakistan","Allama Iqbal International Airport is located in Punjab, Pakistan."
+235,webNLG,"Allama_Iqbal_International_Airport | location | Punjab,_Pakistan",Allama Iqbal International airport is located in Punjab Pakistan.
+236,webNLG,Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority,The Pakistan Civil Aviation Authority governs the Allama Iqbal International Airport.
+237,webNLG,Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority,The Pakistan Civil Aviation Authority is the operating organisation of the Allama Iqbal International Airport.
+238,webNLG,Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority,Allama Iqbal International Airport is operated by Pakistan Civil Aviation Authority.
+239,webNLG,Allama_Iqbal_International_Airport | runwayLength | 2900.0,The runway length of Allama Iqbal International Airport is 2900.0.
+240,webNLG,Allama_Iqbal_International_Airport | runwayLength | 3310.0,"The runway length of Allama Iqbal International Airport is 3,310."
+241,webNLG,Allama_Iqbal_International_Airport | runwayLength | 3310.0,Allama Iqbal International airport has a runway length of 3310.0.
+242,webNLG,Allama_Iqbal_International_Airport | runwayLength | 3310.0,The runway length of Allama Iqbal International Airport is 3310.0.
+243,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18L/36R""",The runway name at Allama Iqbal International airport is 18L/36R.
+244,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18L/36R""","The Allama Iqbal International Airport's runway name is ""18L/36R""."
+245,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18L/36R""",The runway name of Allama Iqbal International Airport is 18L/36R.
+246,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18R/36L""",18R/36L is the runway name at Allama Iqbal International airport.
+247,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18R/36L""",Allama Iqbal International Airport has a runway named 18R/36L.
+248,webNLG,"Allama_Iqbal_International_Airport | runwayName | ""18R/36L""","Allama Iqbal International Airport's runway name is ""18R/36L""."
+249,webNLG,"Alpena,_Michigan | country | United_States",Alpena Michigan is a country in United States.
+250,webNLG,"Alpena,_Michigan | country | United_States","Alpena, Michigan is in the U.S."
+251,webNLG,"Alpena,_Michigan | country | United_States","Alpena, Michigan is located in the United States."
+252,webNLG,Alpena_County_Regional_Airport | 1st_runway_LengthFeet | 9001,The length of the first runway of Alpena County Regional Airport is 9001.
+253,webNLG,Alpena_County_Regional_Airport | 1st_runway_LengthFeet | 9001,The first runway length in feet of Alpena County Regional Airport is 9001.
+254,webNLG,"Alpena_County_Regional_Airport | cityServed | Alpena,_Michigan","Alpena County Regional Airport city served Alpena, Michigan."
+255,webNLG,"Alpena_County_Regional_Airport | cityServed | Alpena,_Michigan","Alpena County Regional Airport serves the city of Alpena, Michigan."
+256,webNLG,"Alpena_County_Regional_Airport | cityServed | Alpena,_Michigan","Alpena County Regional Airport serves Alpena, Michigan."
+257,webNLG,Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210,lpena County Regional Airport elevation above the sea level in metres is 210.
+258,webNLG,Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210,Alpena County Regional Airport has an elevation of 210 metres above sea level.
+259,webNLG,Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210,Aplena County Regional Airport is elevated 210 metres above sea level.
+260,webNLG,"Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan","Alpena County Regional Airport is found in Maple Ridge Township, Alpena County in Michigan."
+261,webNLG,"Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan","The location of Alpena County Regional Airport is Maple Ridge Township, Alpena County, Michigan."
+262,webNLG,"Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan","Alpena County Regional Airport is located in Maple Ridge Township, Alpena County, Michigan."
+263,webNLG,"Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan","Alpena County Regional Airport is found in Wilson Township, Alpena County, Michigan."
+264,webNLG,"Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan","Alpena County Regional Airport is located in the Wilson Township, Alpena County, Michigan."
+265,webNLG,"Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan","The location of Alpena County Regional Airport is Wilson Township, Alpena County, Michigan."
+266,webNLG,"Alpena_County_Regional_Airport | locationIdentifier | ""APN""",The location identifier of Alpena County Regional airport is APN.
+267,webNLG,"Alpena_County_Regional_Airport | locationIdentifier | ""APN""","The Alpena County Regional Airport's location id is ""APN""."
+268,webNLG,"Alpena_County_Regional_Airport | locationIdentifier | ""APN""",The loaction identifier of Alpena County Regional Airport is APN.
+269,webNLG,"Alpena_County_Regional_Airport | owner | Alpena_County,_Michigan","Alpena Country Regional Airport owner is Alpena Country, Michigan."
+270,webNLG,"Alpena_County_Regional_Airport | owner | Alpena_County,_Michigan","Alpena County, Michigan is the owner of the Alpena County Regional Airport."
+271,webNLG,"Alpena_County_Regional_Airport | owner | Alpena_County,_Michigan","The owner of Alpena County Regional Airport is Alpena County, Michigan."
+272,webNLG,Alpena_County_Regional_Airport | runwayLength | 1533.0,"The runway length of Alpena County Regional Airport is 1,533."
+273,webNLG,Alpena_County_Regional_Airport | runwayLength | 1533.0,The runway length of Alpena County Regional airport is 1533.0.
+274,webNLG,Alpena_County_Regional_Airport | runwayLength | 2744.0,Alpena County Regional Airport's runway length is 2744.0.
+275,webNLG,Alpena_County_Regional_Airport | runwayLength | 2744.0,The Alpena County Regional Airport is 2744 meters long.
+276,webNLG,Alpena_County_Regional_Airport | runwayLength | 2744.0,The runway length of Alpena County Regional Airport is 2744.0.
+277,webNLG,"Alpena_County_Regional_Airport | runwayName | ""1/19""",Alpena Country Regional Airport runway name is 1/19/.
+278,webNLG,"Alpena_County_Regional_Airport | runwayName | ""1/19""",1/19 is the runway name of Alpena County Regional Airport.
+279,webNLG,"Alpena_County_Regional_Airport | runwayName | ""1/19""",The runway name of Alpena County Regional Airport is 1/19.
+280,webNLG,"Alpena_County_Regional_Airport | runwayName | ""7/25""",7/25 is the runway name of Alpena County Regional Airport.
+281,webNLG,"Alpena_County_Regional_Airport | runwayName | ""7/25""",The runway name of Alpena County Regional Airport is 7/25.
+282,webNLG,Amsterdam | leaderName | Eberhard_van_der_Laan,Amsterdam's leader is Eberhard van der Laan.
+283,webNLG,Amsterdam | leaderName | Eberhard_van_der_Laan,Eberhard van der Laan is the name of the leader of Amsterdam.
+284,webNLG,Amsterdam | leaderName | Eberhard_van_der_Laan,The leader of Amsterdam is Eberhard van der Laan.
+285,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_LengthMetre | 3800,The length of the first runway at Amsterdam Airport Schiphol is 3800 metres.
+286,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_LengthMetre | 3800,The length of the 1st runway at Amsterdam airport Schiphol is 3800 metres.
+287,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_LengthMetre | 3800,The length of the first runway at Amsterdam Aiport Schiphol is 3800 meters.
+288,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_SurfaceType | Asphalt,The first runway at Amsterdam's Schiphol Airport is made from asphalt.
+289,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_SurfaceType | Asphalt,The first runway of Amsterdam Airport Schiphol is made in asphalt.
+290,webNLG,Amsterdam_Airport_Schiphol | 1st_runway_SurfaceType | Asphalt,The 1st runway at Amsterdam Airport Schiphol is made from Asphalt.
+291,webNLG,"Amsterdam_Airport_Schiphol | 4th_runway_SurfaceType | ""Asphalt""",The fourth runway at Schiphol Airport in Amsterdam is made of asphalt.
+292,webNLG,"Amsterdam_Airport_Schiphol | 4th_runway_SurfaceType | ""Asphalt""",The 4th runway at Amsterdam Airport Schiphol has a surface of asphalt.
+293,webNLG,Amsterdam_Airport_Schiphol | 5th_runway_Number | 18,Amsterdam Airport Schiphol is 5th runway number 18.
+294,webNLG,Amsterdam_Airport_Schiphol | 5th_runway_Number | 18,18 is the number of the fifth runway of Amsterdam Airport Schiphol.
+295,webNLG,Amsterdam_Airport_Schiphol | 5th_runway_Number | 18,Amsterdam Schiphols Airport's 5th runway has the number 18.
+296,webNLG,Amsterdam_Airport_Schiphol | cityServed | Amsterdam,Amsterdam Airport Schiphol serves the city of Amsterdam.
+297,webNLG,Amsterdam_Airport_Schiphol | cityServed | Amsterdam,"Amsterdam airport, Schiphol serves the city of Amsterdam."
+298,webNLG,Amsterdam_Airport_Schiphol | cityServed | Amsterdam,Amsterdam Airport Schuphol serves Amsterdam.
+299,webNLG,Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528,Amsterdam Airport Schiphol is -3.3528 metres above sea level.
+300,webNLG,Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528,Amsterdam airport Schiphol is -3.3528 above sea level.
+301,webNLG,Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528,Amsterdam Airport Schiphol is at an elevation of -3.3528 from sea level.
+302,webNLG,Amsterdam_Airport_Schiphol | location | Haarlemmermeer,Amsterdam's Schiphol Airport is located in Haarlemmermeer.
+303,webNLG,Amsterdam_Airport_Schiphol | location | Haarlemmermeer,The Amsterdam Airport Schiphol is in Haarlemmermeer.
+304,webNLG,Amsterdam_Airport_Schiphol | location | Haarlemmermeer,Amsterdam Airport Schiphol is located in Haarlemmermeer.
+305,webNLG,Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group,Amsterdam Airport Schiphol operating organization is Schiphol Group.
+306,webNLG,Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group,Schiphol Group operates the Amsterdam Airport Schiphol.
+307,webNLG,Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group,The Amsterdam Airport Schiphol is run by the operation organisation the Schiphol Group.
+308,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 2014.0,The runway length at Amsterdam Airport Schiphol is 2014.0 meters.
+309,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 2014.0,"The runway length at Amsterdam airport, Schiphol is 2014.0."
+310,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 2014.0,Amsterdam Airport Schiphol's runway length is 2014.0.
+311,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3300.0,The runway length of Amsterdam airport Schiphol is 3300.0.
+312,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3300.0,The Amsterdam Airport Schiphol's runway length is 3300.
+313,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3300.0,The runway length of Amsterdam Airport Schiphol is 3300.0.
+314,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3400.0,The length of the runway at Amsterdam Airport Schiphol is 3400.0 metres.
+315,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3400.0,"The runway length at Amsterdam Airport, Schiphol is 3400.0."
+316,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3400.0,Amsterdam Airport Schiphol's runway length is 3400.0.
+317,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3453.0,"The runway length of Amsterdam's Schiphol Airport is 3,453."
+318,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3453.0,The runway length at Amsterdam Airport Schiphol is 3453.0.
+319,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3453.0,The runway length of Amsterdam Airport Schiphol is 3453.0.
+320,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3500.0,"Amsterdam's Schiphol Airport has a runway length of 3,500."
+321,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3500.0,The runway length of Amsterdam Airport Schiphol is 3500.0.
+322,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3800.0,The runway length of Amsterdam Airport is 3800.0 metres.
+323,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3800.0,The runway length at Amsterdam Airport Schiphol is 3800.0.
+324,webNLG,Amsterdam_Airport_Schiphol | runwayLength | 3800.0,Amsterdam Airport Schiphol's runway length is 3800.0.
+325,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""04/22 'Oostbaan'""",Amsterdam Airport Schiphol runway name is 04/22 Ooostbaan.
+326,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""04/22 'Oostbaan'""",04/22 Oostbaan is the runway name of Amsterdam Airport Schiphol.
+327,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""04/22 'Oostbaan'""",The runway at Amsterdam Airport Schiphol is 04/22 'Oostbaan.
+328,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""09/27 'Buitenveldertbaan'""",Amsterdam Airport Schiphol runway name is 09/27 Buitenvelderbaan.
+329,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""09/27 'Buitenveldertbaan'""",09/27 Buitenveldertbaan is the runway name of the Amsterdam Airport Schiphol.
+330,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""09/27 'Buitenveldertbaan'""",Amsterdam Schiphol Airport has a runway named 09/27 Buitenveldertbaan.
+331,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18C/36C 'Zwanenburgbaan'""",The runway name of Amsterdam's Schiphol Airport is 18C/36C Zwanenburgbaan.
+332,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18C/36C 'Zwanenburgbaan'""",18C/36C or Zwanenburgbaan are the names for the runway at Amsterdam Airport Schiphol.
+333,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18C/36C 'Zwanenburgbaan'""",The runway name of Amsterdam Airport Schiphol is 18C/36C Zwanenburgbaan.
+334,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18L/36R 'Aalsmeerbaan'""",Amserdam Airport Schiphol runway name is 18L/36R Aalsmeerbaan.
+335,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18L/36R 'Aalsmeerbaan'""",18L/36R Aalsmeerbaan is the runway name of Amsterdam Airport Schiphol.
+336,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18L/36R 'Aalsmeerbaan'""",Amsterdam Schiphol Airport has the runway name 18L/36R 'Aalsmeerbaan.
+337,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18R/36L 'Polderbaan'""",18R/36L Plderbaan is the runway name at Amsterdam Airport Schiphol.
+338,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18R/36L 'Polderbaan'""",The runway at Amsterdam Sciphol Airport is called 18R/36L Polderbaan.
+339,webNLG,"Amsterdam_Airport_Schiphol | runwayName | ""18R/36L 'Polderbaan'""",The runway name of Amsterdam Airport Schiphol is 18R/36L Polderbaan.
+340,webNLG,"Andrews_County,_Texas | countySeat | Andrews,_Texas","Andrews County, Texas is country seat to Andrews, Texas."
+341,webNLG,"Andrews_County,_Texas | countySeat | Andrews,_Texas","Andrews, Texas is the country seat of Andrews County, Texas."
+342,webNLG,"Andrews_County,_Texas | countySeat | Andrews,_Texas","Andrews County, Texas has its county seat in Andrews, Texas."
+343,webNLG,"Andrews_County,_Texas | largestCity | Andrews,_Texas","The largest city in Andrews County, Texas is Andrews."
+344,webNLG,"Andrews_County,_Texas | largestCity | Andrews,_Texas","Andrews, Texas is the largest city in Andrews County, Texas."
+345,webNLG,Andrews_County_Airport | 3rd_runway_LengthFeet | 2939,"The third runway length of Andrews County Airport is 2,939 feet."
+346,webNLG,Andrews_County_Airport | 3rd_runway_LengthFeet | 2939,The Andrews County Airport's 3rd runway length in ft is 2939.
+347,webNLG,Andrews_County_Airport | 3rd_runway_LengthFeet | 2939,The length of the 3rd runway at Andrews County Airport is 2939 feet.
+348,webNLG,Andrews_County_Airport | 4th_runway_LengthFeet | 25,Andrews County Airport is 4th runway length feet of 25.
+349,webNLG,Andrews_County_Airport | 4th_runway_LengthFeet | 25,The fourth runway at Andrews County Airport is 25 feet long.
+350,webNLG,Andrews_County_Airport | 4th_runway_LengthFeet | 25,Andrews County Airport's 4th runway has a length in feet of 25.
+351,webNLG,"Andrews_County_Airport | 4th_runway_SurfaceType | ""Asphalt""",The fourth runway at Andrews County Airport is made from asphalt.
+352,webNLG,"Andrews_County_Airport | 4th_runway_SurfaceType | ""Asphalt""",The Andrews County Airport fourth runway is made of asphalt.
+353,webNLG,"Andrews_County_Airport | 4th_runway_SurfaceType | ""Asphalt""",The 4th runway at Andrews County Airport is made of Asphalt.
+354,webNLG,"Andrews_County_Airport | cityServed | Andrews,_Texas","Andrews Country Airport's city is served by Andrews, Texas."
+355,webNLG,"Andrews_County_Airport | cityServed | Andrews,_Texas","Andrews County Airport serves Andrews, Texas."
+356,webNLG,"Andrews_County_Airport | cityServed | Andrews,_Texas",Andrews County Airport serves the city of Andrews in Texas.
+357,webNLG,Andrews_County_Airport | location | Texas,Andrews County Airport is located in Texas.
+358,webNLG,"Andrews_County_Airport | locationIdentifier | ""E11""",Andrews Country Airport location identifier is E11.
+359,webNLG,"Andrews_County_Airport | locationIdentifier | ""E11""",E11 is the location identifier of Andrews County Airport.
+360,webNLG,"Andrews_County_Airport | locationIdentifier | ""E11""",Andrews County Airport is located in E11.
+361,webNLG,Andrews_County_Airport | runwayLength | 1773.0,The length of the runway at Andrews County Airport is 1773 metres.
+362,webNLG,Andrews_County_Airport | runwayLength | 1773.0,The runway length at Andrews County airport is 1773.0.
+363,webNLG,Andrews_County_Airport | runwayLength | 1773.0,Andrews County Airport's runway length is 1773.0.
+364,webNLG,Andrews_County_Airport | runwayLength | 8.0,Andrews County Airport runway is 8 meters long.
+365,webNLG,Andrews_County_Airport | runwayLength | 8.0,The runway length of Andrews County Airport is 8.0.
+366,webNLG,Andrews_County_Airport | runwayLength | 8.0,Andrews County Airport runway length is 8.0.
+367,webNLG,Andrews_County_Airport | runwayLength | 929.0,The runway length of Andrews County airport is 929.0.
+368,webNLG,Andrews_County_Airport | runwayLength | 929.0,The Andrews County Airport's runway length is 929.
+369,webNLG,"Andrews_County_Airport | runwayName | ""11/29""",Andrews Country Airport runway name is 11/29.
+370,webNLG,"Andrews_County_Airport | runwayName | ""11/29""",11/29 is the runway name of Andrews County Airport.
+371,webNLG,"Andrews_County_Airport | runwayName | ""11/29""",The runway name of Andrews County Airport is 11/29.
+372,webNLG,"Andrews_County_Airport | runwayName | ""16/34""",Andrews Country Airport's runway name is 16/34.
+373,webNLG,"Andrews_County_Airport | runwayName | ""16/34""",16/34 is the runway name of Andrews County Airport.
+374,webNLG,"Andrews_County_Airport | runwayName | ""2/20""",The runway name of Andrews County Airport is 2/20.
+375,webNLG,"Andrews_County_Airport | runwayName | ""2/20""",2/20 is the name of the runway of Andrews County Airport.
+376,webNLG,"Andrews_County_Airport | runwayName | ""Helipad""",The name of the runway at Andrews County Airport is Helipad.
+377,webNLG,"Andrews_County_Airport | runwayName | ""Helipad""",Helipad is the runway name of Andrews County Airport.
+378,webNLG,"Andrews_County_Airport | runwayName | ""Helipad""",The runway at Andrews County Airport is called Helipad.
+379,webNLG,Angola_International_Airport | 1st_runway_LengthFeet | 13123,"The length of the first runway at Angola International Airport is 13,123 feet."
+380,webNLG,Angola_International_Airport | 1st_runway_LengthFeet | 13123,The first runway of Angola International Airport is 13123 feet long.
+381,webNLG,Angola_International_Airport | 1st_runway_LengthFeet | 13123,The 1st runway length in feet of Angola International Airport is 13123.
+382,webNLG,Angola_International_Airport | 1st_runway_Number | 5,Angola International Airport 1st runway is Number 5.
+383,webNLG,Angola_International_Airport | 1st_runway_Number | 5,5 is the number of the first runway of Angola International Airport.
+384,webNLG,Angola_International_Airport | 1st_runway_Number | 5,Angola International Airport's 1st runway has the number 5.
+385,webNLG,Angola_International_Airport | cityServed | Luanda,Angola International Airport city served is Luanda.
+386,webNLG,Angola_International_Airport | cityServed | Luanda,Angola International Airport serves the city of Luanda.
+387,webNLG,Angola_International_Airport | cityServed | Luanda,Angola International Airport serves Luanda.
+388,webNLG,Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159,Angola International airport is 159 metres above sea level.
+389,webNLG,Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159,The Angola International Airport is 159 meters above sea level.
+390,webNLG,Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159,Angola International Airport is 159 metres above the sea level.
+391,webNLG,Angola_International_Airport | location | Ícolo_e_Bengo,Angola International Airport is located at Ícolo e Bengo.
+392,webNLG,Angola_International_Airport | location | Ícolo_e_Bengo,Angola International airport is located in Icolo e Bengo.
+393,webNLG,Angola_International_Airport | location | Ícolo_e_Bengo,Angola International Airport is located in Ícolo e Bengo.
+394,webNLG,Angola_International_Airport | runwayLength | 3800.0,"The runway length of Angola International Airport is 3,800."
+395,webNLG,Angola_International_Airport | runwayLength | 3800.0,The runway at Angola International airport is 3800 long.
+396,webNLG,Angola_International_Airport | runwayLength | 3800.0,The runway length of Angola International Airport is 3800.0.
+397,webNLG,Angola_International_Airport | runwayLength | 4000.0,4000ft is the runway length at Angola International Airport.
+398,webNLG,Angola_International_Airport | runwayLength | 4000.0,The Angola International Airport is 4000 length.
+399,webNLG,Angola_International_Airport | runwayLength | 4000.0,The runway length of Angola International Airport is 4000.0.
+400,webNLG,"Angola_International_Airport | runwayName | ""05L/23R""","The runway at Angola International Airport is called ""05L/23R""."
+401,webNLG,"Angola_International_Airport | runwayName | ""05L/23R""",05L/23R is the runway name at Angola International airport.
+402,webNLG,"Angola_International_Airport | runwayName | ""05L/23R""",The runway at Angola International Airport is named 05L/23R.
+403,webNLG,"Angola_International_Airport | runwayName | ""South Runway""","""South Runway"" is a runway name at Angola International airport."
+404,webNLG,"Angola_International_Airport | runwayName | ""South Runway""",The runway at Angola International Airport is named South Runway.
+405,webNLG,"Angola_International_Airport | runwayName | ""South Runway""","The name of Angola International Airport runway is ""South Runway""."
+406,webNLG,Antwerp | administrativeArrondissement | Arrondissement_of_Antwerp,Antwerp is admin Arrondissement of Arrondissement.
+407,webNLG,Antwerp | administrativeArrondissement | Arrondissement_of_Antwerp,Arrondissement of Antwerp is the administrative arrondissement of Antwerp.
+408,webNLG,Antwerp | administrativeArrondissement | Arrondissement_of_Antwerp,The administrative Arrondissement of Antwerp is the Arrondissement of Antwerp.
+409,webNLG,Antwerp | country | Belgium,Antwerp is in the country of Belgium.
+410,webNLG,Antwerp | country | Belgium,Antwerp is a popular tourist destination in Belgium.
+411,webNLG,Antwerp | country | Belgium,Antwerp is in Belgium.
+412,webNLG,Antwerp | mayor | Bart_De_Wever,The mayor of Antwerp is Bart De Wever.
+413,webNLG,Antwerp | mayor | Bart_De_Wever,Bart De Wever is the mayor of Antwerp.
+414,webNLG,Antwerp_International_Airport | cityServed | Antwerp,Antwerp International Airport serves the city of Antwerp.
+415,webNLG,Antwerp_International_Airport | cityServed | Antwerp,Antwerp is served by Antwerp International airport.
+416,webNLG,"Antwerp_International_Airport | operatingOrganisation | ""Flemish department of Mobility and Public Works""",Antwerp International Airport operation organization is Flemish department of mobility and public works.
+417,webNLG,"Antwerp_International_Airport | operatingOrganisation | ""Flemish department of Mobility and Public Works""",Flemish Department of Mobility and Public Works operates the Antwerp International Airport.
+418,webNLG,"Antwerp_International_Airport | operatingOrganisation | ""Flemish department of Mobility and Public Works""",The Flemish department of Mobility and Public Works is the operating organisation of Antwerp International Airport.
+419,webNLG,Antwerp_International_Airport | owner | Flemish_Region,The owner of Antwerp International Airport is the Flemish Region.
+420,webNLG,Antwerp_International_Airport | owner | Flemish_Region,Antwerp International Airport is owned by Flemish Region.
+421,webNLG,Antwerp_International_Airport | owner | Flemish_Region,Antwerp International Airport is owned by the Flemish Region.
+422,webNLG,Antwerp_International_Airport | runwayLength | 1510.0,The runway length at Antwerp International airport is 1510.0.
+423,webNLG,Antwerp_International_Airport | runwayLength | 1510.0,The runway at Antwerp International Airport is 1510 meters.
+424,webNLG,Antwerp_International_Airport | runwayLength | 1510.0,The runway length of Antwerp International Airport is 1510.0.
+425,webNLG,Antwerp_International_Airport | runwayLength | 600.0,The runway at Antwerp International airport is 600.0 in length.
+426,webNLG,Antwerp_International_Airport | runwayLength | 600.0,Antwerp International Airport has a runway length of 600.0.
+427,webNLG,Antwerp_International_Airport | runwayLength | 600.0,The runway length of Antwerp International Airport is 600.0.
+428,webNLG,"Appleton,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin","Appleton, Wisconsin is part of Grand Chute, Wisconsin."
+429,webNLG,"Appleton,_Wisconsin | isPartOf | Kimberly,_Wisconsin","Appleton, Wisconsin is part of Kimberly, Wisconsin."
+430,webNLG,"Appleton,_Wisconsin | isPartOf | Little_Chute,_Wisconsin","Appleton, Wisconsin is part of little chute, Wisconsin."
+431,webNLG,"Appleton,_Wisconsin | isPartOf | Little_Chute,_Wisconsin","Appleton, Wisconsin, is part of Little Chute, Wisconsin."
+432,webNLG,"Appleton,_Wisconsin | isPartOf | Little_Chute,_Wisconsin","Little Chute, Wisconsin is part of Appleton, Wisconsin."
+433,webNLG,Appleton_International_Airport | 1st_runway_LengthFeet | 8002,Appleton International Airport is 1st 8002 runway length.
+434,webNLG,Appleton_International_Airport | 1st_runway_LengthFeet | 8002,The first runway of Appleton International Airport has a length of 8002 feet.
+435,webNLG,Appleton_International_Airport | 1st_runway_LengthFeet | 8002,The 1st runway length in feet of Appleton International Airport is 8002.
+436,webNLG,"Appleton_International_Airport | cityServed | Appleton,_Wisconsin","Appletone International Airport city served Appleton, Wisconsin."
+437,webNLG,"Appleton_International_Airport | cityServed | Appleton,_Wisconsin","Appleton International Airport serves the city of Appleton, Wisconsin."
+438,webNLG,"Appleton_International_Airport | cityServed | Appleton,_Wisconsin","Appleton, Wisconsin is a city which is served by Appleton International Airport."
+439,webNLG,Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280,Appleton International Airport elevation above the sea level in metres is 280.
+440,webNLG,Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280,Appleton International Airport has an elevation of 280 metres above sea level.
+441,webNLG,Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280,Appleton International Airport is elevated 280 metres above sea level.
+442,webNLG,"Appleton_International_Airport | location | Greenville,_Wisconsin","Appleton International Airport can be found in Greenville, Wisconsin."
+443,webNLG,"Appleton_International_Airport | location | Greenville,_Wisconsin","Appleton International airport is located in Greenville, Wisconsin."
+444,webNLG,"Appleton_International_Airport | location | Greenville,_Wisconsin","The Appleton International Airport is in Greenville, Wisconsin."
+445,webNLG,"Appleton_International_Airport | locationIdentifier | ""ATW""",The location identifier for Appleton International Airport is ATW.
+446,webNLG,"Appleton_International_Airport | locationIdentifier | ""ATW""","The Appleton International Airport's location id is ""ATW""."
+447,webNLG,"Appleton_International_Airport | locationIdentifier | ""ATW""",The location identifier of Appleton International Airport is ATW.
+448,webNLG,"Appleton_International_Airport | operatingOrganisation | Outagamie_County,_Wisconsin","The operating organization for Appleton International Airport is in Outagamie County, Wisconsin."
+449,webNLG,"Appleton_International_Airport | operatingOrganisation | Outagamie_County,_Wisconsin","Outagamie County, Wisconsin is the operating organisation of Appleton International Airport."
+450,webNLG,"Appleton_International_Airport | operatingOrganisation | Outagamie_County,_Wisconsin","The operators of Appleton International Airport are in Outagamie County, Wisconsin."
+451,webNLG,Appleton_International_Airport | runwayLength | 1982.0,"The runway length of Appleton International Airport is 1,982."
+452,webNLG,Appleton_International_Airport | runwayLength | 1982.0,The runway length at Appleton International airport is 1982.0.
+453,webNLG,Appleton_International_Airport | runwayLength | 1982.0,The Appleton International Airport's runway length is 1982.
+454,webNLG,"Appleton_International_Airport | runwayName | ""12/30""",The runway name of Appleton International Airport is 12/30.
+455,webNLG,"Appleton_International_Airport | runwayName | ""12/30""",12/30 is the runway name of Appleton International Airport.
+456,webNLG,"Appleton_International_Airport | runwayName | ""3/21""",The runway name of Appleton International Airport is 3/21.
+457,webNLG,"Appleton_International_Airport | runwayName | ""3/21""",3/21 is the runway name of Appleton International Airport.
+458,webNLG,Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae,"Poaceae is the surface type of the second runway of Ardmore Airport, New Zealand."
+459,webNLG,Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae,The 2nd runway at Ardmore Airport (New Zealand) is made of Poaceae.
+460,webNLG,Ardmore_Airport_(New_Zealand) | 3rd_runway_LengthFeet | 1960,"The 3rd runway at Ardmore Airport, New Zealand is 1960 feet in length."
+461,webNLG,Ardmore_Airport_(New_Zealand) | 3rd_runway_LengthFeet | 1960,The Ardmore Airport in New Zealand's 3rd runway length in feet is 1960.
+462,webNLG,Ardmore_Airport_(New_Zealand) | 3rd_runway_LengthFeet | 1960,The 3rd runway at Ardmore Airport (New Zealand) is 1960 feet long.
+463,webNLG,Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae,Ardmore Airport (New Zealand)'s 3rd runway surface type is Poaceae.
+464,webNLG,Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae,The 3rd runway at Ardmore Airport (New Zealand) is made of Poaceae.
+465,webNLG,Ardmore_Airport_(New_Zealand) | elevationAboveTheSeaLevel_(in_metres) | 34.0,The Ardmore Airport in New Zealand is 34 meters above sea level.
+466,webNLG,Ardmore_Airport_(New_Zealand) | elevationAboveTheSeaLevel_(in_metres) | 34.0,"Ardmore Airport, New Zealand is elevated 34.0 metres above sea level."
+467,webNLG,Ardmore_Airport_(New_Zealand) | location | Auckland,"The Ardmore Airport, New Zealand is in Auckland."
+468,webNLG,Ardmore_Airport_(New_Zealand) | location | Auckland,"Ardmore Airport is located in Auckland, New Zealand."
+469,webNLG,Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand,"The Civil Aviation Authority of New Zealand is the operating organisation for Ardmore Airport, New Zealand."
+470,webNLG,Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand,Ardmore Airport in New Zeland is operated by the Civil Aviation Authority of New Zealand.
+471,webNLG,Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand,Ardmore Airport (New Zealand) is operated by the Civil Aviation Authority of New Zealand.
+472,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0,"The runway length of Ardmore Airport in New Zealand is 1,411."
+473,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0,"The runway length at Ardmore airport, New Zealand is 1411.0."
+474,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0,The Ardmore Airport of New Zealand's runway length is 1411.
+475,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 597.0,Ardmore Airport (New Zealand) runway length is 597.0.
+476,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 597.0,"The runway length of Ardmore Airport, New Zealand is 597.0."
+477,webNLG,Ardmore_Airport_(New_Zealand) | runwayLength | 597.0,The runway length of Ardmore Airport (New Zealand) is 597.0.
+478,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03L/21R""",03L/21R is the runway name of Ardmore Airport in New Zealand.
+479,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03L/21R""","03L/21R is the runway name of Ardmore Airport, New Zealand."
+480,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03L/21R""",The runway name at Ardmore Airport (New Zealand) is 03L/21R.
+481,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03R/21L""","The runway at Ardmore Airport in New Zealand is called ""03R/21L""."
+482,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03R/21L""","03R/21L is a runway name at Ardmore Airport, New Zealand."
+483,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""03R/21L""","Ardmore Airport (New Zealand)'s runway name is ""03R/21L""."
+484,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""07/25""",Ardmore Airport (New Zealand) runway name is 07/25.
+485,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""07/25""","07/25 is the runway name of Ardmore Airport, New Zealand."
+486,webNLG,"Ardmore_Airport_(New_Zealand) | runwayName | ""07/25""",The runway name of Ardmore Airport (New Zealand) is 07/25.
+487,webNLG,Ashgabat_International_Airport | 1st_runway_LengthFeet | 12467,The length of the first runway at Ashgabat International Airport is 12467 feet.
+488,webNLG,Ashgabat_International_Airport | 1st_runway_LengthFeet | 12467,The 1st runway at Ashgabat International airport is 12467 feet in length.
+489,webNLG,Ashgabat_International_Airport | 1st_runway_LengthFeet | 12467,Ashgabat International Airport's 1st runway has a length of 12467 feet.
+490,webNLG,Ashgabat_International_Airport | 3rd_runway_LengthFeet | 2953,The Ashgabat International Airport's 3rd runway length in ft is 2953.
+491,webNLG,Ashgabat_International_Airport | 3rd_runway_LengthFeet | 2953,The length of the 3rd runway at Ashgabat International Airport is 2953 feet.
+492,webNLG,"Ashgabat_International_Airport | IATA_Location_Identifier | ""ASB""",ASB is the IATA location identifier for Ashgabat International airport.
+493,webNLG,"Ashgabat_International_Airport | IATA_Location_Identifier | ""ASB""",The IATA Location Identifier of Ashgabat International Airport is ASB.
+494,webNLG,Ashgabat_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 211,Ashgabat International Airport is 211 metres above sea level.
+495,webNLG,Ashgabat_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 211,Ashgabat International Airport is elevated 211 metres above sea level.
+496,webNLG,Ashgabat_International_Airport | location | Ashgabat,Ashgabat International Airport is located in Ashgabat.
+497,webNLG,Ashgabat_International_Airport | location | Ashgabat,Ashgabat is the location of Ashgabat International Airport.
+498,webNLG,Ashgabat_International_Airport | operatingOrganisation | Turkmenistan_Airlines,The operating organization for Ashgabat International Airport is called Turkmenistan Airlines.
+499,webNLG,Ashgabat_International_Airport | operatingOrganisation | Turkmenistan_Airlines,Ashgabat International Airport is operated by Turkmenistan Airlines.
+500,webNLG,Ashgabat_International_Airport | runwayLength | 2989.0,The runway length at Ashgabat International Airport is 2989.0 meters.
+501,webNLG,Ashgabat_International_Airport | runwayLength | 2989.0,The runway length at Ashgabat International airport is 2989.0.
+502,webNLG,Ashgabat_International_Airport | runwayLength | 2989.0,The average runway length at Ashgabat International Airport is 2989.0 m.
+503,webNLG,Ashgabat_International_Airport | runwayLength | 3800.0,The runway length at Ashgabat International airport is 3800.0.
+504,webNLG,Ashgabat_International_Airport | runwayLength | 3800.0,Ashgabat International Airport has a runway length of 3800.0.
+505,webNLG,Ashgabat_International_Airport | runwayLength | 3800.0,The runway length of Ashgabat International Airport is 3800.0.
+506,webNLG,Ashgabat_International_Airport | runwayLength | 900.0,The runway length at Ashgabat International Airport is 900.0.
+507,webNLG,Ashgabat_International_Airport | runwayLength | 900.0,Ashgabat International Airport's runway is 900 meters long.
+508,webNLG,Ashgabat_International_Airport | runwayLength | 900.0,The runway length of Ashgabat International Airport is 900.0.
+509,webNLG,"Ashgabat_International_Airport | runwayName | ""12L/30R""",12L/30R is the runway name of Ashgabat International Airport.
+510,webNLG,"Ashgabat_International_Airport | runwayName | ""12L/30R""",The runway name of Ashgabat International Airport is 12L/30R.
+511,webNLG,"Ashgabat_International_Airport | runwayName | ""12R/30L""",12R/30L is the runway name of the Ashgabat International Airport.
+512,webNLG,"Ashgabat_International_Airport | runwayName | ""12R/30L""",Ashgabat International Airport has the runway name 12R/30L.
+513,webNLG,"Ashgabat_International_Airport | runwayName | ""12R/30L""",Ashgabat International Airport has a runway named 12R/30L.
+514,webNLG,Athens | country | Greece,Athens is located in the country of Greece.
+515,webNLG,Athens | country | Greece,Athens is a city in Greece.
+516,webNLG,Athens | mayor | Giorgos_Kaminis,Athens mayor is Giorgos Kaminis.
+517,webNLG,Athens | mayor | Giorgos_Kaminis,Giorgos Kaminis is the mayor of Athens.
+518,webNLG,Athens | mayor | Giorgos_Kaminis,The mayor of Athens is Giorgos Kaminis.
+519,webNLG,Athens_International_Airport | cityServed | Athens,The Athens International Airport serves the city of Athens.
+520,webNLG,Athens_International_Airport | cityServed | Athens,Athens International Airport serves the city of Athens.
+521,webNLG,Athens_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 94,Athens International Airport is 94 metres above sea level.
+522,webNLG,Athens_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 94,The elevation above the sea level (in metres) of Athens International Airport is 94.
+523,webNLG,Athens_International_Airport | location | Spata,Athens International Airport is in Spata.
+524,webNLG,Athens_International_Airport | location | Spata,Athens International Airport is located in Spata.
+525,webNLG,Athens_International_Airport | runwayLength | 3800.0,"The runway length at Athens International Airport is 3,800."
+526,webNLG,Athens_International_Airport | runwayLength | 3800.0,The runway length of Athens International Airport is 3800.0.
+527,webNLG,Athens_International_Airport | runwayLength | 4000.0,The runway length of Athens International Airport is 4000.0.
+528,webNLG,Athens_International_Airport | runwayLength | 4000.0,Athens International Airport has a runway length of 4000.0.
+529,webNLG,"Atlantic_City,_New_Jersey | country | United_States","Atlantic City, New Jersey is in the U.S.A."
+530,webNLG,"Atlantic_City,_New_Jersey | country | United_States","Atlantic City, New Jersey is in the United States."
+531,webNLG,"Atlantic_City,_New_Jersey | isPartOf | New_Jersey","Atlantic City, New Jersey is part of New Jersey."
+532,webNLG,"Atlantic_City,_New_Jersey | leaderName | Don_Guardian","The leader of Atlantic City, New Jersey is Don Guardian."
+533,webNLG,"Atlantic_City,_New_Jersey | leaderName | Don_Guardian","The leader's name of Atlantic City, New Jersey, is Don Guardian."
+534,webNLG,"Atlantic_City_International_Airport | ICAO_Location_Identifier | ""KACY""",Atlantic City International Airport's ICAO Location Identifier is KACY.
+535,webNLG,"Atlantic_City_International_Airport | ICAO_Location_Identifier | ""KACY""",KACY is the ICAO Location Identifier of Atlantic City International Airport.
+536,webNLG,"Atlantic_City_International_Airport | cityServed | Atlantic_City,_New_Jersey","The Atlantic City International Airport serves Atlantic City, N.J."
+537,webNLG,"Atlantic_City_International_Airport | cityServed | Atlantic_City,_New_Jersey","Atlantic City International Airport serves the city of Atlantic City, New Jersey."
+538,webNLG,Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_feet) | 75,The elevation above sea level for Atlantic City International Airport is 75ft.
+539,webNLG,Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_feet) | 75,The Atlantic City International Airport is 75 feet above sea level.
+540,webNLG,Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_feet) | 75,Atlantic City International Airport has an elevation of 75 feet above sea level.
+541,webNLG,Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 23.0,The elevation above the sea level (in metres) of Atlantic City International Airport is 23.0.
+542,webNLG,"Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey","Atlantic City International Airport is in Egg Harbor Township, N.J."
+543,webNLG,"Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey","Atlantic City International Airport is located in Egg Harbor Township, New Jersey."
+544,webNLG,"Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey","Atlantic City International Airport is located at Egg Harbor Township, New Jersey."
+545,webNLG,Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey,The Atlantic City International Airport is operated by the Port Authority of New York and New Jersey.
+546,webNLG,Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey,"The Port Authority of New York and New Jersey is the operating organisation of Atlantic City International airport,."
+547,webNLG,Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey,Atlantic City International Airport is operated by the Port Authority of New York and New Jersey.
+548,webNLG,Atlantic_City_International_Airport | runwayLength | 1873.0,"The runway length of Atlantic City International Airport is 1,873."
+549,webNLG,Atlantic_City_International_Airport | runwayLength | 1873.0,The runway length of Atlantic City International Airport is 1873.
+550,webNLG,Atlantic_City_International_Airport | runwayLength | 1873.0,The runway length of Atlantic City International Airport is 1873.0.
+551,webNLG,Atlantic_City_International_Airport | runwayLength | 3048.0,The runway length of Atlantic City International Airport is 3048.0.
+552,webNLG,"Atlantic_City_International_Airport | runwayName | ""4/22""",Atlantic City International Airport runway name is 4/22.
+553,webNLG,"Atlantic_City_International_Airport | runwayName | ""4/22""",4/22 is the runway name of Atlantic City International Airport.
+554,webNLG,"Atlantic_City_International_Airport | runwayName | ""4/22""",Atlantic City International Airport has the runway name 4/22.
+555,webNLG,"Atlantic_City_International_Airport | runwaySurfaceType | ""Asphalt/Concrete""",The runway surface at Atlantic City International Airport is made from asphalt and concrete.
+556,webNLG,"Atlantic_City_International_Airport | runwaySurfaceType | ""Asphalt/Concrete""",The Atlantic City International Airport's runway surface is made of Asphalt and Concrete.
+557,webNLG,Belgium | capital | City_of_Brussels,The capital of Belgium is Brussels.
+558,webNLG,Belgium | capital | City_of_Brussels,The capital city of Belgium is Brussels.
+559,webNLG,Belgium | language | French_language,French is the spoken language in Belgium.
+560,webNLG,Belgium | language | French_language,The language of Belgium is French.
+561,webNLG,Belgium | language | French_language,French is one of the languages spoken in Belgium.
+562,webNLG,Belgium | language | German_language,Belgium language is German language.
+563,webNLG,Belgium | language | German_language,German is the language of Belgium.
+564,webNLG,Belgium | language | German_language,The language spoken is Belgium is German.
+565,webNLG,Belgium | leaderName | Charles_Michel,Belgium's leader is Charles Michel.
+566,webNLG,Belgium | leaderName | Charles_Michel,The leader of Belgium is Charles Michel.
+567,webNLG,Belgium | leaderName | Philippe_of_Belgium,Philippe of Belgium is the leader of Belgium.
+568,webNLG,Belgium | leaderName | Philippe_of_Belgium,The leader of Belgium is Philippe of Belgium.
+569,webNLG,Belgium | leaderName | Philippe_of_Belgium,The leader of Belgium is Philippe of Belgium.
+570,webNLG,Belgium | officialLanguage | French_language,French is the official language of Belgium.
+571,webNLG,Belgium | officialLanguage | French_language,The official language of Belgium is French.
+572,webNLG,Belgium | officialLanguage | German_language,German is the official language of Belgium.
+573,webNLG,Belgium | officialLanguage | German_language,Belguim's official language is German.
+574,webNLG,Belgium | officialLanguage | German_language,German is an official language of Belgium.
+575,webNLG,Civil_Aviation_Authority_of_New_Zealand | location | Wellington,The Civil Aviation Authority of New Zealand is in Wellington.
+576,webNLG,Civil_Aviation_Authority_of_New_Zealand | location | Wellington,The Civil Aviation Authority of New Zealand is located in Wellington.
+577,webNLG,Curitiba | country | Brazil,Curitiba is located in Brazil.
+578,webNLG,Curitiba | country | Brazil,Curitiba is in Brazil.
+579,webNLG,Curitiba | isPartOf | Paraná_(state),Curitiba is part of the State of Paraná.
+580,webNLG,Curitiba | isPartOf | Paraná_(state),Curitiba is part of Parana state.
+581,webNLG,Curitiba | isPartOf | Paraná_(state),Curitaba is part of the state of Parana.
+582,webNLG,Curitiba | leaderName | Democratic_Labour_Party_(Brazil),Curitiba is led by the Democratic Labour Party (Brazil).
+583,webNLG,Denmark | capital | Copenhagen,The capital of Denmark is Copenhagen.
+584,webNLG,Denmark | capital | Copenhagen,Copenhagen is the capital of Denmark.
+585,webNLG,Denmark | language | Danish_language,Denmark language is Danish language.
+586,webNLG,Denmark | language | Danish_language,Danish is the language of Denmark.
+587,webNLG,Denmark | language | Danish_language,The language of Denmark is Danish.
+588,webNLG,Denmark | language | Faroese_language,The Faroese language is spoken in Denmark.
+589,webNLG,Denmark | language | Faroese_language,Denmark's language is Faroese.
+590,webNLG,Denmark | language | German_language,German is the language spoken in Denmark.
+591,webNLG,Denmark | language | German_language,German is the language of Denmark.
+592,webNLG,Denmark | language | German_language,German is a language spoken in Denmark.
+593,webNLG,Denmark | language | Greenlandic_language,Greenlandic is the language spoken in Denmark.
+594,webNLG,Denmark | language | Greenlandic_language,The Greenlandic language is spoken in Denmark.
+595,webNLG,Denmark | language | Greenlandic_language,One of the languages of Denmark is Greenlandic.
+596,webNLG,Denmark | leaderName | Lars_Løkke_Rasmussen,Denmark's leader name is Lars Løkke Rasmussen.
+597,webNLG,Denmark | leaderName | Lars_Løkke_Rasmussen,Lars Løkke Rasmussen leads Denmark.
+598,webNLG,Denmark | leaderName | Lars_Løkke_Rasmussen,Lars Løkke Rasmussen is the leader of Denmark.
+599,webNLG,Denmark | leaderName | Margrethe_II_of_Denmark,Denmark's leader is Margrethe II of Denmark.
+600,webNLG,Denmark | leaderName | Margrethe_II_of_Denmark,Margrethe II of Denmark is the leader of Denmark.
+601,webNLG,Denmark | leaderName | Margrethe_II_of_Denmark,The Queen of Denmark is Margrethe II.
+602,webNLG,ENAIRE | locationCity | Madrid,ENAIRE is in the city of Madrid.
+603,webNLG,ENAIRE | locationCity | Madrid,ENAIRE is located in the city of Madrid.
+604,webNLG,ENAIRE | locationCity | Madrid,ENAIRE is located in Madrid.
+605,webNLG,"Egg_Harbor_Township,_New_Jersey | country | United_States","Egg Harbor Township, New Jersey is in the United States."
+606,webNLG,"Egg_Harbor_Township,_New_Jersey | country | United_States","Egg Harbor Township is located in New Jersey, in the United States."
+607,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey","Egg Harbor Township is a township in Atlantic County, New Jersey, United States."
+608,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey","The Egg Harbor Township,New Jersey is a part of Atlantic County, New Jersey."
+609,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey","Egg Harbor Township, New Jersey, is part of Atlantic County, New Jersey."
+610,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | New_Jersey","Egg Harbor Township, New Jersey is part of New Jersey."
+611,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | New_Jersey",Egg Harbor Township is a part of New Jersey.
+612,webNLG,"Egg_Harbor_Township,_New_Jersey | isPartOf | New_Jersey","Egg Harbor Township, New Jersey, is part of New Jersey."
+613,webNLG,Flemish_Government | jurisdiction | Flanders,Flemish Government jurisdiction is Flanders.
+614,webNLG,Flemish_Government | jurisdiction | Flanders,Flanders is the jurisdiction of the Flemish Government.
+615,webNLG,Flemish_Government | jurisdiction | Flanders,The Flemish Government has its jurisdiction in Flanders.
+616,webNLG,Flemish_Government | jurisdiction | Flemish_Region,Flemish Government jurisdiction is Flemish Region.
+617,webNLG,Flemish_Government | jurisdiction | Flemish_Region,The Flemish Government has jurisdiction of the Flemish region.
+618,webNLG,Flemish_Government | jurisdiction | Flemish_Region,The jurisdiction of the Flemish Government is the Flemish Region.
+619,webNLG,Flemish_Region | country | Belgium,The Flemish region is in the country of Belgium.
+620,webNLG,Flemish_Region | leaderName | Flemish_Government,The Flemish region is led by the Flemish government.
+621,webNLG,Flemish_Region | leaderName | Flemish_Government,The Flemish Government leads the Flemish Region.
+622,webNLG,Greece | demonym | Greeks,Greece demonym is Greeks.
+623,webNLG,Greece | demonym | Greeks,The people of Greece are called Greeks.
+624,webNLG,Greece | demonym | Greeks,The demonym of the inhabitants of Greece is Greeks.
+625,webNLG,Greece | language | Greek_language,Greek is the language spoken in Greece.
+626,webNLG,Greece | language | Greek_language,The language spoken in Greece is Greek.
+627,webNLG,Greece | leaderName | Alexis_Tsipras,Greece leader name is Alexis Tsipras.
+628,webNLG,Greece | leaderName | Alexis_Tsipras,Alexis Tsipras is the name of the leader of Greece.
+629,webNLG,Greece | leaderName | Alexis_Tsipras,The leader of Greece is Alexis Tsipras.
+630,webNLG,Greece | leaderName | Nikos_Voutsis,The leader of Greece is Nikos Voutsis.
+631,webNLG,Greece | leaderName | Prokopis_Pavlopoulos,Greece's leader name is Prokopis Pavlopoulos.
+632,webNLG,Greece | leaderName | Prokopis_Pavlopoulos,Prokopis Pavlopoulos is the leader of Greece.
+633,webNLG,Greece | leaderName | Prokopis_Pavlopoulos,Prokopis Pavlopoulos is the name of the Leader of Greece.
+634,webNLG,"Greenville,_Wisconsin | isPartOf | Clayton,_Winnebago_County,_Wisconsin","Greenville, Wisconsin, is part of Clayton Winnebago County, Wisconsin."
+635,webNLG,"Greenville,_Wisconsin | isPartOf | Clayton,_Winnebago_County,_Wisconsin","Greenville, Wisconsin is part of Clayton, Winnebago County, Wisconsin."
+636,webNLG,"Greenville,_Wisconsin | isPartOf | Dale,_Wisconsin","Greenville, Wisconsin is part of Dale, Wisconsin."
+637,webNLG,"Greenville,_Wisconsin | isPartOf | Ellington,_Wisconsin","Greenville, Wisconsin is part of Ellington, Wisconsin."
+638,webNLG,"Greenville,_Wisconsin | isPartOf | Ellington,_Wisconsin","Greenville, Wisconsin, is part of Ellington, Wisconsin."
+639,webNLG,"Greenville,_Wisconsin | isPartOf | Menasha_(town),_Wisconsin","Greenville, Wisconsin is part of Menasha, Wisconsin."
+640,webNLG,"Greenville,_Wisconsin | isPartOf | Menasha_(town),_Wisconsin",Greenville is part of the town of Menasha in Wisconsin.
+641,webNLG,"Greenville,_Wisconsin | isPartOf | Menasha_(town),_Wisconsin","Greenville, Wisconsin is part of Menasha (town), Wisconsin."
+642,webNLG,"Harrietstown,_New_York | country | United_States","Harrietsown, New York, is located in United States."
+643,webNLG,"Harrietstown,_New_York | country | United_States","Harrietstown, New York is in the United States."
+644,webNLG,"Harrietstown,_New_York | isPartOf | New_York","Harrietstown, New York is part of New York."
+645,webNLG,"Harrietstown,_New_York | isPartOf | New_York","Harrietstown, New York, is part of New York."
+646,webNLG,"Harrietstown,_New_York | isPartOf | New_York",Harrietstown is part of New York.
+647,webNLG,"Harrietstown,_New_York | isPartOf | United_States","Harrietstown, New York is part of the United States."
+648,webNLG,"Harrietstown,_New_York | isPartOf | United_States","Harrietstown, N.Y. is part of the U.S."
+649,webNLG,India | leaderName | Narendra_Modi,Narendra Modi is the leader of India.
+650,webNLG,India | leaderName | Narendra_Modi,The leader of India is Narendra Modi.
+651,webNLG,India | leaderName | T._S._Thakur,One of the leaders of India is called T. S. Thakur.
+652,webNLG,India | leaderName | T._S._Thakur,T S Thakur is a leader of India.
+653,webNLG,India | leaderName | T._S._Thakur,The leader of India is T.S. Thakur.
+654,webNLG,Indian_Air_Force | aircraftHelicopter | HAL_Light_Combat_Helicopter,India's Air Force has an aircraft-capable helicopter known as the HAL Light Combat Helicopter.
+655,webNLG,Indian_Air_Force | aircraftHelicopter | HAL_Light_Combat_Helicopter,The HAL Light Combat Helicopter is an aircraft helicopter of the Indian Air Force.
+656,webNLG,Indian_Air_Force | aircraftHelicopter | HAL_Light_Combat_Helicopter,The HAL Light Combat Helicopter is a Helicopter used by the Indian Air Force.
+657,webNLG,Indian_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III,The Boeing C-17 Globemaster III is a transport aircraft in the Indian Air Force.
+658,webNLG,Indian_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III,The transport aircraft for the Indian Air Force is the Boeing C-17 Globemaster III.
+659,webNLG,Infraero | location | Brasília,Infraero is in Brasilia.
+660,webNLG,Infraero | location | Brasília,Infraero is located in Brasilia.
+661,webNLG,Infraero | location | Brazil,Infraero location is in Brazil.
+662,webNLG,Infraero | location | Brazil,Infraero is in Brazil.
+663,webNLG,Infraero | location | Brazil,Infraero is located in Brazil.
+664,webNLG,Iraq | currency | Iraqi_dinar,The currency in Iraq is the Iraqi dinar.
+665,webNLG,Iraq | currency | Iraqi_dinar,The currency of Iraq is the Iraqi dinar.
+666,webNLG,Iraq | language | Kurdish_languages,The Kurdish languages are spoken in Iraq.
+667,webNLG,Iraq | leaderName | Fuad_Masum,Iraq is led by Fuad Masum.
+668,webNLG,Iraq | leaderName | Fuad_Masum,Iraq's leader is Fuad Masum.
+669,webNLG,Iraq | leaderName | Fuad_Masum,The leader of Iraq is Fuad Masum.
+670,webNLG,Iraq | leaderName | Haider_al-Abadi,Iraq leader name is Haider Al-Abadi.
+671,webNLG,Iraq | leaderName | Haider_al-Abadi,Haider al-Abadi is the name of the leader of Iraq.
+672,webNLG,Iraq | leaderName | Haider_al-Abadi,The leader if Iraq is called Haider al-Abadi.
+673,webNLG,Iraq | officialLanguage | Arabic,The official language of Iraq is Arabic.
+674,webNLG,Iraq | officialLanguage | Arabic,Arabic is the official language of Iraq.
+675,webNLG,Lahore | country | Pakistan,Lahore is in Pakistan.
+676,webNLG,Lahore | country | Pakistan,Lahore is located in Pakistan.
+677,webNLG,"Lake_Placid,_New_York | country | United_States","Lake Placid, New York is located in the United States."
+678,webNLG,"Lake_Placid,_New_York | isPartOf | Essex_County,_New_York","Lake Placid, New York is part of Essex County, New York."
+679,webNLG,"Lake_Placid,_New_York | isPartOf | New_York","Lake Placid, New York is part of New York."
+680,webNLG,"Lake_Placid,_New_York | isPartOf | New_York","Lake Placid, New York, is part of New York."
+681,webNLG,Luanda | country | Angola,Luanda is in the country of Angola.
+682,webNLG,Luanda | country | Angola,Luanda is located in Angola.
+683,webNLG,Madrid | isPartOf | Community_of_Madrid,Madrid is part of the community of Madrid.
+684,webNLG,Madrid | leaderParty | Ahora_Madrid,Ahora Madrid is the leading party of Madrid.
+685,webNLG,Madrid | leaderParty | Ahora_Madrid,The leader party in Madrid is Ahora Madrid.
+686,webNLG,"Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States","Maple Ridge Townshio, Alpena County Michigan is in the United States."
+687,webNLG,"Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States","The Maple Ridge Township, Alpena County, Michigan is in the U.S."
+688,webNLG,"Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States","Maple Ridge Township, Alpena County, Michigan is located in the United States."
+689,webNLG,Pakistan | leaderName | Anwar_Zaheer_Jamali,The leader of Pakistan is Anwar Zaheer Jamali.
+690,webNLG,Pakistan | leaderName | Anwar_Zaheer_Jamali,Pakistan has a leader called Anwar Zaheer Jamali.
+691,webNLG,Pakistan | leaderName | Mamnoon_Hussain,Pakistan's leader is Mamnoon Hussain.
+692,webNLG,Pakistan | leaderName | Mamnoon_Hussain,Mamnoon Hussain is the leader of Pakistan.
+693,webNLG,Pakistan | leaderName | Mamnoon_Hussain,Mamnoon Hussain is a leader of Pakistan.
+694,webNLG,Pakistan | leaderName | Nawaz_Sharif,Pakistan's leader is Nawaz Sharif.
+695,webNLG,Pakistan | leaderName | Nawaz_Sharif,The leader of Pakistan is Nawaz Sharif.
+696,webNLG,Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport,The Pakistan Civil Aviation Authority is headquartered at Jinnah International Airport.
+697,webNLG,Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport,The Pakistan Civil Aviation Authority Headquarters is the Jinnah International Airport.
+698,webNLG,Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport,The headquarters of the Pakistan Civil Aviation Authority are at Jinnah International Airport.
+699,webNLG,Pakistan_Civil_Aviation_Authority | location | Jinnah_International_Airport,Pakistan Civil Aviation Authority's location is Jinnah International Airport.
+700,webNLG,Pakistan_Civil_Aviation_Authority | location | Jinnah_International_Airport,The Pakistan Civil Aviation Authority is in the Jinnah International Airport.
+701,webNLG,Pakistan_Civil_Aviation_Authority | location | Jinnah_International_Airport,The Pakistan Civil Aviation Authority is located at Jinnah International Airport.
+702,webNLG,Paracuellos_de_Jarama | country | Spain,Paracuellos de Jarama is in Spain.
+703,webNLG,Paracuellos_de_Jarama | country | Spain,Paracuellos de Jarama is located in Spain.
+704,webNLG,Paracuellos_de_Jarama | isPartOf | Community_of_Madrid,Paracuellos de Jarama is part of the community of Madrid.
+705,webNLG,Poaceae | class | Monocotyledon,Poaceae class is Monocotyledon.
+706,webNLG,Poaceae | class | Monocotyledon,Poaceae is in the class Monocotyledon.
+707,webNLG,Poaceae | division | Flowering_plant,Poaceae belongs to the division of flowering plants.
+708,webNLG,Poaceae | order | Commelinids,Poaceae belongs to the order of Commelinids.
+709,webNLG,Poaceae | order | Commelinids,Poaceae is the order of Commelinids.
+710,webNLG,Poaceae | order | Poales,Poaceae is of the Poales order.
+711,webNLG,Poaceae | order | Poales,Poaceae is of the order Poales.
+712,webNLG,Poaceae | order | Poales,Poaceae is a member of the order of Poales.
+713,webNLG,Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center,Port Authority of New York and New Jersey headquarter is Four World Trade Center.
+714,webNLG,Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center,The Four World Trade Center is the headquarters of the Port Authority of New York and New Jersey.
+715,webNLG,Port_Authority_of_New_York_and_New_Jersey | headquarter | New_York,Port Authority of New York and New Jersey's headquarter is New York.
+716,webNLG,Port_Authority_of_New_York_and_New_Jersey | headquarter | New_York,New York is the base of the Port Authority of New York and New Jersey.
+717,webNLG,Port_Authority_of_New_York_and_New_Jersey | headquarter | New_York,The Port Authority of New York and New Jersey has its headquarters in New York.
+718,webNLG,Port_Authority_of_New_York_and_New_Jersey | regionServed | New_York,The Port Authority of New York and New Jersey serves the New York region.
+719,webNLG,Port_Authority_of_New_York_and_New_Jersey | regionServed | New_York,The Port Authority of New York and New Jersey serves New York.
+720,webNLG,"Punjab,_Pakistan | country | Pakistan",Punjab is found in the country Pakistan.
+721,webNLG,"Punjab,_Pakistan | country | Pakistan",Punjab is in Pakistan.
+722,webNLG,"Punjab,_Pakistan | leaderName | Malik_Muhammad_Rafique_Rajwana","Malik Muhammad Rafique Rajwana is a leader in the Punjab, Pakistan."
+723,webNLG,"Punjab,_Pakistan | leaderName | Malik_Muhammad_Rafique_Rajwana","Malik Muhammad Rafique Rajwana is the leader of Punjab, Pakistan."
+724,webNLG,"Punjab,_Pakistan | leaderName | Malik_Muhammad_Rafique_Rajwana","Punjab, Pakistan's leader is Malik Muhammad Rafique Rajwana."
+725,webNLG,"Punjab,_Pakistan | leaderName | Shehbaz_Sharif","The leader of Punjab, Pakistan is Shehbaz Sharif."
+726,webNLG,"Punjab,_Pakistan | leaderTitle | Provincial_Assembly_of_the_Punjab","The Punjab, Pakistan, is led by the Provincial Assembly of the Punjab."
+727,webNLG,"Punjab,_Pakistan | leaderTitle | Provincial_Assembly_of_the_Punjab","Punjab, Pakistan is led by the Provincial Assembly of the Punjab."
+728,webNLG,San_Sebastián_de_los_Reyes | country | Spain,San Sebastián de los Reyes is in Spain.
+729,webNLG,San_Sebastián_de_los_Reyes | country | Spain,San Sebastian de los Reyes is located in Spain.
+730,webNLG,San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid,San Sebastian de los Reyes is part of the Community of Madrid.
+731,webNLG,San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid,San Sebastián de los Reyes is part of the Community of Madrid.
+732,webNLG,San_Sebastián_de_los_Reyes | leaderParty | People's_Party_(Spain),"The People's Party is the lead party of San Sebastian de los Reyes, Spain."
+733,webNLG,"Saranac_Lake,_New_York | country | United_States","Saranac Lake, New York is located in the U.S."
+734,webNLG,"Saranac_Lake,_New_York | country | United_States",Saranac Lake New York is located in the United States.
+735,webNLG,"Saranac_Lake,_New_York | country | United_States","Saranac Lake, New York is located in the United States."
+736,webNLG,"Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York","Saranac Lake, New York is part of Essex County, New York."
+737,webNLG,"Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York","Saranac Lake, New York is part of Harrietstown, New York."
+738,webNLG,"Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York","Saranac Lake, New York, is part of Harrietstown, New York."
+739,webNLG,"Saranac_Lake,_New_York | isPartOf | United_States","Saranac Lake, New York is part of the United States."
+740,webNLG,"Saranac_Lake,_New_York | isPartOf | United_States","Saranac Lake, New York, is part of the United States."
+741,webNLG,South_Jersey_Transportation_Authority | chief | Stephen_Dilts,South Jersey Transportation Authority chief is Stephen Dilts.
+742,webNLG,South_Jersey_Transportation_Authority | chief | Stephen_Dilts,Stephen Dilts is the chief of the South Jersey Transportation Authority.
+743,webNLG,South_Jersey_Transportation_Authority | chief | Stephen_Dilts,Stephen Dilts is the chief of South Jersey Transportation Authority.
+744,webNLG,South_Jersey_Transportation_Authority | leaderName | Stephen_Dilts,South Jersey Transportation Authority's leader name is Stephen Dilts.
+745,webNLG,South_Jersey_Transportation_Authority | leaderName | Stephen_Dilts,Stephen Dilts is the head of the South Jersey Transportation Authority.
+746,webNLG,South_Jersey_Transportation_Authority | leaderName | Stephen_Dilts,Stephen Dilts is the leader of the South Jersey Transportation Authority.
+747,webNLG,São_José_dos_Pinhais | isPartOf | Paraná_(state),São José dos Pinhais is part Of Paraná (state).
+748,webNLG,São_José_dos_Pinhais | isPartOf | Paraná_(state),São José dos Pinhais is part of the state of Paraná.
+749,webNLG,São_José_dos_Pinhais | isPartOf | Paraná_(state),Sao Jose dos Pinhais is part of Parana.
+750,webNLG,"São_José_dos_Pinhais | isPartOf | South_Region,_Brazil",São José dos Pinhais is part of the south region of Brazil.
+751,webNLG,"São_José_dos_Pinhais | isPartOf | South_Region,_Brazil","Sao Jose dos Pinhais is part of the South Region, Brazil."
+752,webNLG,"Texas | capital | Austin,_Texas",Austin is the capital of Texas.
+753,webNLG,"Texas | capital | Austin,_Texas",The capital of Texas is Austin.
+754,webNLG,Texas | country | United_States,Texas is in the United States.
+755,webNLG,Texas | country | United_States,Texas is located in the United States.
+756,webNLG,Texas | demonym | Tejano,Texas demonym is Tejano.
+757,webNLG,Texas | demonym | Tejano,The inhabitants of Texas have the demonym of Tejano.
+758,webNLG,Texas | demonym | Tejano,A Tejano is a demonym term used in Texas.
+759,webNLG,Texas | demonym | Texan,The people of Texas are known as Texans.
+760,webNLG,Texas | demonym | Texan,The inhabitants of Texas have the demonym Texan.
+761,webNLG,Texas | demonym | Texan,The people of Texas are called Texans.
+762,webNLG,Texas | language | English_language,English is spoken in Texas.
+763,webNLG,Texas | language | English_language,English is the language of Texas.
+764,webNLG,Texas | language | English_language,The language spoken in Texas is English.
+765,webNLG,Texas | language | Spanish_language,Spanish is spoken in Texas.
+766,webNLG,Texas | language | Spanish_language,Spanish is a language spoken in Texas.
+767,webNLG,Tirstrup | country | Denmark,Tirstrup is located in the country of Denmark.
+768,webNLG,Tirstrup | country | Denmark,Tirstrup is in the country of Denmark.
+769,webNLG,Tirstrup | country | Denmark,Tirstrup is in Denmark.
+770,webNLG,Tirstrup | isPartOf | Central_Denmark_Region,Tirstrup is part of the Central Denmark region.
+771,webNLG,Tirstrup | isPartOf | Denmark,Tirstrup is part of Denmark.
+772,webNLG,Turkmenistan_Airlines | headquarter | Ashgabat,The headquarters of Turkmenistan Airlines are located in Ashgabat.
+773,webNLG,Turkmenistan_Airlines | headquarter | Ashgabat,The headquarters of Turkmenistan Airlines are in Ashgabat.
+774,webNLG,Turkmenistan_Airlines | headquarter | Turkmenistan,The headquarters of Turkmenistan Airlines are located in Turkmenistan.
+775,webNLG,Turkmenistan_Airlines | headquarter | Turkmenistan,The headquarters of Turkmenistan Airlines are in Turkmenistan.
+776,webNLG,Turkmenistan_Airlines | hubAirport | Ashgabat_International_Airport,The hub airport for Turkmenistan airlines is Ashgabat International airport.
+777,webNLG,Turkmenistan_Airlines | hubAirport | Ashgabat_International_Airport,Turkmenistan Airlines utilizes the Ashgabat International Airport as its hub.
+778,webNLG,Turkmenistan_Airlines | hubAirport | Turkmenabat_Airport,The hub airport for Turkmenistan Airlines is Turkmenabat Airport.
+779,webNLG,Turkmenistan_Airlines | hubAirport | Turkmenabat_Airport,Turkmenabat airport is the hub for Turkmenistan airlines.
+780,webNLG,Turkmenistan_Airlines | hubAirport | Turkmenbashi_International_Airport,The hub airport for Turkmenistan Airlines is Turkmenbashi International Airport.
+781,webNLG,Turkmenistan_Airlines | hubAirport | Turkmenbashi_International_Airport,The hub Airport of Turkmenistan Airlines is Turkmenbashi International Airport.
+782,webNLG,United_States_Air_Force | aircraftFighter | General_Dynamics_F-16_Fighting_Falcon,United States Air FOrce aircraft fighter is General Dynamics F-16 Fighting Falcon.
+783,webNLG,United_States_Air_Force | aircraftFighter | General_Dynamics_F-16_Fighting_Falcon,The General Dynamics F-16 Fighting Falcon is an aircraft fighter in the United States Air Force.
+784,webNLG,United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle,United States Air Force's aircraft fighter is called McDonnell Douglas F-15 Eagle.
+785,webNLG,United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle,The McDonnell Douglas F-15 Eagle is an aircraft fighter in the U.S. Air Force.
+786,webNLG,United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle,McDonnell Douglas F-15 Eagle was a Fighter Aircraft of the United States Air Force.
+787,webNLG,United_States_Air_Force | attackAircraft | Lockheed_AC-130,The Lockheed AC-130 can be found on USAF aircraft carriers.
+788,webNLG,United_States_Air_Force | attackAircraft | Lockheed_AC-130,The Lockheed AC-130 is an attack aircraft of the United States Air Force.
+789,webNLG,United_States_Air_Force | battles | Invasion_of_Grenada,One of the noted United States Air Force battles was the Invasion of Grenada.
+790,webNLG,United_States_Air_Force | battles | Invasion_of_Grenada,The United States Air Force was involved in battles at the Invasion of Grenada.
+791,webNLG,United_States_Air_Force | battles | Invasion_of_Grenada,The United States Air Force battled in the Invasion of Grenada.
+792,webNLG,United_States_Air_Force | battles | Korean_War,The United States Air Force fought battles in the Korean war.
+793,webNLG,United_States_Air_Force | battles | Korean_War,The United States Air Force has fought in the Korean War.
+794,webNLG,United_States_Air_Force | battles | Operation_Enduring_Freedom,The Operation Enduring Freedom is one of the battles of the United States Air Force.
+795,webNLG,United_States_Air_Force | battles | Operation_Enduring_Freedom,Operation Enduring Freedom was a battle involving the United States Air Force.
+796,webNLG,United_States_Air_Force | battles | United_States_invasion_of_Panama,The USAF was involved in the Invasion of Panama.
+797,webNLG,United_States_Air_Force | battles | United_States_invasion_of_Panama,The United States invasion of Panama was a battle involving the United States Air Force.
+798,webNLG,United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules,Lockheed C-130 Hercules is a transport aircraft in the United States Air Force.
+799,webNLG,United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules,The transport aircraft for the United States Air Force is the Lockheed C-130 Hercules.
+800,webNLG,Uttar_Pradesh | isPartOf | Awadh,Uttar Pradesh is part of Awadh.
+801,webNLG,Uttar_Pradesh | isPartOf | Bundelkhand,Uttar Pradesh is part of Bundelkhand.
+802,webNLG,Uttar_Pradesh | leaderName | Ram_Naik,Ram Naik is the leader in Uttar Pradesh.
+803,webNLG,Uttar_Pradesh | leaderName | Ram_Naik,The leader name of Uttar Pradesh is Ram Naik.
+804,webNLG,"Wilson_Township,_Alpena_County,_Michigan | country | United_States","Wilson Township, in Alpena County, Michigan is in the U.S.A."
+805,webNLG,"Wilson_Township,_Alpena_County,_Michigan | country | United_States","Wilson Township, Alpena County, Michigan is in the United States."
+806,webNLG,"Wilson_Township,_Alpena_County,_Michigan | country | United_States","The Wilson Township, Alpena County, Michigan is in the United States."
+807,webNLG,"Wilson_Township,_Alpena_County,_Michigan | isPartOf | United_States","Wilson Township, Alpena County, Michigan is part of the United States."
+808,webNLG,Ícolo_e_Bengo | country | Angola,Ícolo e Bengo is in Angola.
+809,webNLG,Ícolo_e_Bengo | country | Angola,Ícolo e Bengo is located in Angola.
+810,webNLG,Ícolo_e_Bengo | isPartOf | Luanda_Province,Ícolo e Bengo is in the Luanda Province.
+811,webNLG,Ícolo_e_Bengo | isPartOf | Luanda_Province,Ícolo e bengo is part of Luanda Province.
