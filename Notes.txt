@@ -13,3 +13,12 @@ https://pypi.org/project/torchtext/
 install Flask
 https://flask.palletsprojects.com/en/master/installation/
 pip install Flask
+
+========================================
+http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
+
+Python Data Science Handbook
+
+https://www.tutorialspoint.com/python/python_modules.htm
+
+
