@@ -1,4 +1,6 @@
 
+import configparser
+import os
 import pandas as pd
 import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration,Adafactor
@@ -9,9 +11,20 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 
 
+#读取配置文件
+pro_dir = os.path.split(os.path.realpath(__file__))[0]
+config_path = os.path.join(pro_dir, "config.ini")
+#if not os.path.exists(config_path):print("无配置文件")
+config = configparser.ConfigParser()
+config.read(config_path)
+path_dataset = config.get("config","WebNLG_dataset")
+path_savedTriple = config.get("config","dataset_triple_saveTo_csv")
+path_entireModel = config.get("config","T5_pretrained_model")
+path_testModel = config.get("config","T5_test_model")
 
-files = glob.glob("/Users/lindsay/Desktop/AAMAS_Demo/model_T5/data_1triples/1triple_allSolutions_Airport_train_release.xml", recursive=True) 
 
+# getData
+files = glob.glob(path_dataset, recursive=True) 
 
 print(len(files))
 triple_re=re.compile('(\d)triples')
@@ -43,9 +56,9 @@ for st,unst in data_dct.items():
 
 
 df=pd.DataFrame(mdata_dct)
-df.to_csv('/Users/lindsay/Desktop/AAMAS_Demo/T5_test/webNLG2020_train.csv')
+df.to_csv(path_savedTriple)
 
-train_df=pd.read_csv('//Users/lindsay/Desktop/AAMAS_Demo/T5_test/webNLG2020_train.csv', index_col=[0])
+train_df=pd.read_csv(path_savedTriple, index_col=[0])
 train_df=train_df.iloc[  :35000,:]
 train_df=train_df.sample(frac = 1)
 batch_size=8
@@ -123,8 +136,7 @@ for epoch in range(1,int(num_of_epochs)+1):
             labelbatch.append(labels)
         inputbatch=tokenizer.batch_encode_plus(inputbatch,padding=True,max_length=400,return_tensors='pt')["input_ids"]
         labelbatch=tokenizer.batch_encode_plus(labelbatch,padding=True,max_length=400,return_tensors="pt") ["input_ids"]
-        # inputbatch=inputbatch.to(dev)
-        # labelbatch=labelbatch.to(dev)
+
 
         # clear out the gradients of all Variables 
         optimizer.zero_grad()
@@ -149,12 +161,12 @@ for epoch in range(1,int(num_of_epochs)+1):
     running_loss=running_loss/int(num_of_batches)
     print('Epoch: {} , Running loss: {}'.format(epoch,running_loss))
 
-    torch.save(model,'/Users/lindsay/Desktop/AAMAS_Demo/T5_test/pytoch_model.bin')
+    torch.save(model, path_testModel)
 
 
 
 # Load Model
-model_saved = torch.load('/Users/lindsay/Desktop/AAMAS_Demo/T5_test/pytoch_model.bin')
+model_saved = torch.load(path_testModel)
 
 
 import warnings
