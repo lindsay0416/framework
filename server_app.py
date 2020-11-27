@@ -4,6 +4,7 @@ from flask import Flask, request, jsonify, send_from_directory
 import websocket
 import threading
 import json
+import time
 
 app = Flask(__name__)
 new_message = None
@@ -103,6 +104,13 @@ def on_open(ws):
 if __name__ == '__main__':
     
     threading.Thread(target=_run_browser).start()
+    time.sleep(2)
+    SHARED['ws'].send('{"text": "begin"}')
+    message_available.wait()
+    message_available.clear()
+    SHARED['ws'].send('{"text": "begin"}')
+    message_available.wait()
+    message_available.clear()
      
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.run(host='localhost', port=5000, debug=True)

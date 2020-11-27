@@ -17,10 +17,10 @@ function startNetwork() {
 
     // create an array with edges
     edgesArray = [
-        {from: 1, to: 3},
-        {from: 1, to: 2},
-        {from: 2, to: 4},
-        {from: 2, to: 5},
+        {id: "1", from: 1, to: 3},
+        {id: "2", from: 1, to: 2},
+        {id: "3", from: 2, to: 4},
+        {id: "4", from: 2, to: 5},
     ];
     edges = new vis.DataSet(edgesArray);
 
