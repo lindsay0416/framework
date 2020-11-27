@@ -18,6 +18,7 @@ class rdfUtility:
         return graph
         
 
+    # Create
     @staticmethod
     def insert2Graph():
         graph = rdfUtility.loadGraph()
@@ -34,8 +35,7 @@ class rdfUtility:
         graph.add(bob, FOAF.knows, linda)
         graph.add(linda, RDF.type, FOAF.Person)
         graph.add(linda, FOAF.name, Literal("Linda")
-        
-
+         
 
 
 def main():
