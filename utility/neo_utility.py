@@ -53,7 +53,7 @@ class neoUtility:
                 query=query, exception=exception))
             raise
 
-    def create_relation():z+
+    def create_relation():
 
     
 
