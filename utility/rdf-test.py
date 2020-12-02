@@ -1,4 +1,3 @@
-
 import rdflib
 from rdflib import Graph
 from rdflib import URIRef, BNode, Literal
@@ -10,7 +9,7 @@ class rdf_test:
 
     @staticmethod
     def add(namespace, triple):
-        graph = rdflib.Graph('Sleepycat', identifier=namespace)
+        graph = rdflib.Graph('Sleepycat', identifier = namespace)
         graph.open('db', create=True)
         s = rdflib.URIRef(triple[0])
         p = rdflib.URIRef(triple[1])
@@ -23,7 +22,7 @@ class rdf_test:
         #如果存在：update提到次数
         if (s, None, None) in graph or (None, None, s) in graph:
                 attr = (s,m,Literal(graph.value(s,m)+1))
-                graph.set(attr)
+                graph.set(attr) # set(plugin function: Replace Literal value)
         #如果不存在：新建节点并添加上述两个节点属性
         else: 
             graph.add((s,m,Literal(1)))
