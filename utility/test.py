@@ -2,6 +2,7 @@ from openie_utility import OpenieUtility
 from utility import Utility
 from preprocess_utility import PreprocessUtility
 
+
 def main():
     # neo4j = neoUtility()
     # neo4j.find_entity("aa", "David")

@@ -1,9 +1,23 @@
 from Load_T5_model import TextGenerationUtility
 from cosine_similarity import cosine_Similarity_Utility
+import sys
+
+sys.path.append(r'./utility/rdf-test.py')
+'''python import模块时， 是在sys.path里按顺序查找的。
+sys.path是一个列表，里面以字符串的形式存储了许多路径。
+使用A.py文件中的函数需要先将他的文件路径放到sys.path中'''
+import rdf_test
+
+
+# a=A.A(2,3)
 
 
 
 def main():
+    
+    result =  rdf_test.test(1, 2)
+
+    print(result)
 
     ''' Test cosine Similarity'''
 
