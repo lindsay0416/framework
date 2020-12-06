@@ -1,23 +1,22 @@
+from rdflib import Namespace
 from Load_T5_model import TextGenerationUtility
 from cosine_similarity import cosine_Similarity_Utility
 import sys
-
-sys.path.append(r'./utility/rdf-test.py')
+sys.path.append(r'./utility')
 '''python import模块时， 是在sys.path里按顺序查找的。
 sys.path是一个列表，里面以字符串的形式存储了许多路径。
 使用A.py文件中的函数需要先将他的文件路径放到sys.path中'''
-import rdf_test
-
-
-# a=A.A(2,3)
+from rdf_test import rdf_test_Utility
 
 
 
 def main():
-    
-    result =  rdf_test.test(1, 2)
 
-    print(result)
+    ''' Get word lists (Subjects, repations, objects) from rdf db '''
+    ss,ps,os = rdf_test_Utility.getAlltriples("nb")
+
+    print("subject list: ", ss, "\n",  "relation list: ", ps, "\n", "object list: ", os)
+
 
     ''' Test cosine Similarity'''
 
@@ -27,7 +26,7 @@ def main():
     vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec) 
     sim_words = cosine_Similarity_Utility.similarity_Cal(word2vec, word_list)
 
-    cdistance = cosine_Similarity_Utility.cosine_distance(word2vec.wv, 'intelligence', word_list)
+    cdistance = cosine_Similarity_Utility.cosine_distance_rank(word2vec.wv, 'intelligence', word_list, 5)
     max_triple = cosine_Similarity_Utility.triple_Similarity(word2vec, word_list)
 
     ''' The vector of the specific word'''
@@ -38,7 +37,7 @@ def main():
     inputWord = 'intelligence'
     sim_words = word2vec.wv.most_similar(inputWord) # pass 
     # print("sim_words of " + inputWord + " :" ,sim_words )   # pass 
-    # print("Top 5 most similar: ", cdistance) # pass
+    print("Top 5 most similar: ", cdistance) # pass
 
     ''' Test load_model Text generation. '''
     tokenizer, model_saved = TextGenerationUtility.load_Model()  

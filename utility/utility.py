@@ -19,7 +19,7 @@ class Utility:
         dateTimeObj = datetime.now()
         timestampStr = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
         # print('Current Timestamp : ', timestampStr)
-        data['timestamp'] = timestampStr    
+        data['timestamp'] = timestampStr
         # Write the sentences into jsonl file.
         with jsonlines.open(path,"a") as js_writer: 
             js_writer.write(data)

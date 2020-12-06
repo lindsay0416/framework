@@ -5,6 +5,16 @@ import websocket
 import threading
 import json
 import time
+import configparser
+import sys
+sys.path.append(r'./utility')
+sys.path.append(r'./Response_model')
+from rdf_utility import rdfUtility
+from preprocess_utility import PreprocessUtility
+from utility import Utility
+from openie_utility import OpenieUtility
+from cosine_similarity import cosine_Similarity_Utility
+from Load_T5_model import TextGenerationUtility
 
 app = Flask(__name__)
 new_message = None
@@ -31,17 +41,60 @@ def give_response():
         return s
     if request.method == 'POST':
         user_input = request.form['user_input']
-        SHARED['ws'].send('{"text": "'+user_input+'"}')
-        # logic xxxxx
-        message_available.wait()
-        s = new_message
-        message_available.clear()
-        # s = "hello word"
-        # print(s)
-        return s
-        # return jsonify(results)
+        #data preprocessing 
+        inputList = user_input.split( )
+        #切换用户命令： Select<UserID(Domain Name)>
+        if len(inputList) == 2 and inputList[0] == "select":
+            #读取配置文件
+            conf = configparser.ConfigParser()
+            filepath = "Config/config.ini"
+            conf.read(filepath)
+            node ="config"
+            key = "rdfNamespace"
+            value = inputList[1]
+            conf.set(node,key,value)
+            fh = open(filepath ,'w')
+            conf.write(fh)
+            fh.close()
+        else:
+            # Handle user input 
+            data = {}
+            # 输入数据清洗
+            data['text'] = PreprocessUtility.preprocess(user_input)
+            print("Input after data cleaning: ", data['text'])
+            Utility.write_input_to_file(data)
+            # OpenIE， Sentence --> triple[]
+            triples = OpenieUtility.sentence_to_triple(user_input)
+            print("Triples from input: ",triples)
+            # write triples to file 
+            Utility.write_triple_to_file(triples)
+            for triple in triples:
+                # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
+                t = cosine_Similarity_Utility.triple_Similarity(triple)
+                if t != None:
+                    # 将找出的triple generate 为 text。作为response 返回给前端。
+                    tokenizer, model_saved = TextGenerationUtility.load_Model() 
+                    responseText = TextGenerationUtility.generate(t, model_saved, tokenizer) 
+                    print("Text generated from finded triple: ", responseText)
+                    #将输入的triples存入KG
+                    add_triples_KG(triples)
+                    return responseText
+            #将输入的triples存入KG
+            add_triples_KG(triples)
+            # 如果没有在RDF DB中找到适合的Triple， 将请求转发给Parlai server.
+            print("Similar triple not founed in KG, transfering request...")
+            SHARED['ws'].send('{"text": "'+user_input+'"}')
+            message_available.wait()
+            s = new_message
+            message_available.clear()
+            return s
+            # return jsonify(results)
 
 
+def add_triples_KG(triples):
+    for triple in triples:
+        rdfUtility.add((triple["subject"],triple["relation"],triple["object"]))
+        
 
 
 def setup_interactive(ws):
