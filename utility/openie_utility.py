@@ -21,7 +21,7 @@ class OpenieUtility:
         return triples
 
 def main():
-    aa = OpenieUtility.sentence_to_triple("jason likes cats")
+    aa = OpenieUtility.sentence_to_triple("Jason likes cats")
     print(aa)
 
 if __name__ == "__main__":

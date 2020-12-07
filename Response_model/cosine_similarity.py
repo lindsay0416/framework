@@ -1,6 +1,7 @@
 import configparser
 import os
 from gensim.models import Word2Vec
+import gensim
 import bs4 as bs
 import urllib.request
 import re
@@ -53,7 +54,7 @@ class cosine_Similarity_Utility:
             b = model[item]
             #cos_sim  = 1 - scipy.spatial.distance.cosine(a, b)
             cos_sim = dot(a, b)/(norm(a)*norm(b))
-            word_list.append((item,cos_sim))
+            word_list.append((item,cos_sim))            
         return word_list
 
 
@@ -65,9 +66,15 @@ class cosine_Similarity_Utility:
         #if not os.path.exists(config_path):print("无配置文件")
         config = configparser.ConfigParser()
         config.read(config_path)
-        path = config.get("config","URL")
+        print("Config sections: ", config.sections())
+        # path_AI = config.get("Training_Dataset", "wiki_AI")
+        # path_Food = config.get("Training_Dataset", "wiki_Food")
+        path_Airport = config.get("Training_Dataset", "wiki_Airport")
+
         # processing the data read from URL
-        scrapped_data = urllib.request.urlopen(path)
+        # scrapped_data = urllib.request.urlopen(path_AI)
+        # scrapped_data = urllib.request.urlopen(path_Food)
+        scrapped_data = urllib.request.urlopen(path_Airport)
         article = scrapped_data .read()
         parsed_article = bs.BeautifulSoup(article,'lxml')
         paragraphs = parsed_article.find_all('p')
@@ -98,8 +105,33 @@ class cosine_Similarity_Utility:
 
     @staticmethod
     def train_Model(all_words):
-        word2vec = Word2Vec(all_words, min_count=1, size= 50, workers=3, window =3, sg = 1)        
+
+        #读取配置文件
+        pro_dir = os.path.split(os.path.realpath(__file__))[0]
+        config_path = os.path.join(pro_dir, "config.ini")
+        #if not os.path.exists(config_path):print("无配置文件")
+        config = configparser.ConfigParser()
+        config.read(config_path)
+        # path_AI = config.get("pretrained_model", "model_AI")
+        # path_Food = config.get("pretrained_model", "model_Food")
+        path_Airport = config.get("pretrained_model", "model_Airport")
+        
+
+
+        ## Train model
+        word2vec = Word2Vec(all_words, min_count=1, size= 50, workers=3, window =3, sg = 1)
+        # word2vec.wv.save_word2vec_format(path_AI, binary=True)
+        # word2vec.wv.save_word2vec_format(path_Food, binary=True)
+        word2vec.wv.save_word2vec_format(path_Airport, binary=True)
+        
+        ## Load model
+        # word2vec = gensim.models.KeyedVectors.load_word2vec_format(model_AI, binary=True)
+        # word2vec = gensim.models.KeyedVectors.load_word2vec_format(model_Food, binary=True)       
+        # word2vec = gensim.models.KeyedVectors.load_word2vec_format(model_Airport, binary=True)
+
+
         return word2vec
+
 
     @staticmethod
     def get_wordVec(word2vec):
@@ -117,12 +149,22 @@ class cosine_Similarity_Utility:
         #if not os.path.exists(config_path):print("无配置文件")
         config = configparser.ConfigParser()
         config.read(config_path)
-        path = config.get("config","word_VectorPath")
+
+        # path_AI = config.get("saved_Vector", "vector_AI")
+        # df = pd.DataFrame({"word": word_list, "vector": list(vector_all)})   
+        # df.to_csv(path_AI, index = None)
+
+        # path_Food = config.get("saved_Vector", "vector_Food")
+        # df = pd.DataFrame({"word": word_list, "vector": list(vector_all)})   
+        # df.to_csv(path_Food, index = None)
+
+        path_Airport = config.get("saved_Vector", "vector_Airport")
+        df = pd.DataFrame({"word": word_list, "vector": list(vector_all)})   
+        df.to_csv(path_Airport, index = None)
         
         ## vector_all Length = 2341
         # save words and vectors into csv file
-        df = pd.DataFrame({"word": word_list, "vector": list(vector_all)})   
-        df.to_csv(path, index = None)
+        
     
         return vector_all, word_list, vocabulary
 
@@ -236,21 +278,26 @@ class cosine_Similarity_Utility:
         
             
 def main():
-#     article_text = cosine_Similarity_Utility.getData()
-#     all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
-#     # print("all words: \n", all_words)
 
-#     ## Train
-#     word2vec = cosine_Similarity_Utility.train_Model(all_words)
+    # # Train 输入新数据训练不同Domain的模型，并且存储预训练模型在本地。
+    article_text = cosine_Similarity_Utility.getData()
+    all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
+    # # print("all words: \n", all_words)
 
+    
+    word2vec = cosine_Similarity_Utility.train_Model(all_words)
+    vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
+    print(word_list, len(word_list))
+    print('Done')
+    
 
-#     vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
-#     sim_words, Num = cosine_Similarity_Utility.similarity_Cal(word2vec, word_list)
-
-    inputTriple = {"subject": "intelligence", "relation": "stop", "object": "fear"}
-    triple = cosine_Similarity_Utility.triple_Similarity(inputTriple)
-    print(triple)
+    ## Test input Triple. 使用自定义的 input triple，测试预训练模型。 
+    # inputTriple = {"subject": "human", "relation": "develop", "object": "ai"}
+    # inputTriple = {"subject": "people", "relation": "eat", "object": "food"}
+    # triple = cosine_Similarity_Utility.triple_Similarity(inputTriple)
+    # print(triple)
  
+
 if __name__ == "__main__":
      main()
 

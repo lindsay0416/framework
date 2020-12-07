@@ -18,3 +18,6 @@
 {"subject": "jason", "relation": "likes", "object": "cats"}
 {"subject": "intelligence", "relation": "stop", "object": "fear"}
 {"subject": "jason", "relation": "likes", "object": "cats"}
+{"subject": "People", "relation": "eat", "object": "food"}
+{"subject": "People", "relation": "eat", "object": "food"}
+{"subject": "people", "relation": "eat", "object": "food"}

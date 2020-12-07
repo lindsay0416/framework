@@ -64,7 +64,7 @@ def give_response():
             print("Input after data cleaning: ", data['text'])
             Utility.write_input_to_file(data)
             # OpenIE， Sentence --> triple[]
-            triples = OpenieUtility.sentence_to_triple(user_input)
+            triples = OpenieUtility.sentence_to_triple(str(data['text']))
             print("Triples from input: ",triples)
             # write triples to file 
             Utility.write_triple_to_file(triples)
