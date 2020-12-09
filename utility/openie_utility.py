@@ -14,16 +14,16 @@ class OpenieUtility:
     def sentence_to_triple(sentence):
         triples = []
         with StanfordOpenIE() as client:
-        # text = 'Barack Obama was born in Hawaii. Richard Manning wrote this sentence.'
-        # print('Text: %s.' % sentence)
             for triple in client.annotate(sentence):
-                #print('|-', triple)
+                print('|-', triple)
                 triples.append(triple)
         return triples
 
 def main():
-    input = "Human eat plants."
-    text = PreprocessUtility.preprocess(input)
+    # input_text = "Human eat plants."
+    input_text = 'Barack Obama was born in Hawaii. Richard Manning wrote this sentence.'
+    text = PreprocessUtility.preprocess(input_text)
+    print(text)
     aa = OpenieUtility.sentence_to_triple(text)
     print(aa)
 
