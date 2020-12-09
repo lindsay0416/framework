@@ -5,6 +5,7 @@ import pandas as pd
 import jsonlines
 import json
 import spacy 
+from preprocess_utility import PreprocessUtility
 
 
 class OpenieUtility:
@@ -21,7 +22,9 @@ class OpenieUtility:
         return triples
 
 def main():
-    aa = OpenieUtility.sentence_to_triple("Jason likes cats")
+    input = "Human eat plants."
+    text = PreprocessUtility.preprocess(input)
+    aa = OpenieUtility.sentence_to_triple(text)
     print(aa)
 
 if __name__ == "__main__":

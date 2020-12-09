@@ -93,13 +93,18 @@ class rdfUtility:
 
 
 def main():
-    # nb is a namespace(unique Identifier)
+    ## nb is a namespace(unique Identifier)
     # print("Triple under a specific namespace: ", rdf_test_Utility.getAlltriples("nb"))  
     # print("TimeStamp: ", rdf_test_Utility.getProperty("nb","aa","Created")) # Timestamp
     
-    rdfUtility.add(("ai","stop","fear")) # Add triples with add method.
-    rdfUtility.add(("battlefield","decide","benefit")) # Add triples with add method.
-    rdfUtility.add(("siri","choose","photographs"))
+    ## Domain  == AI
+    # rdfUtility.add(("ai","stop","fear")) # Add triples with add method.
+    # rdfUtility.add(("battlefield","decide","benefit")) # Add triples with add method.
+    # rdfUtility.add(("siri","choose","photographs"))
+
+    ## Domain  == Food
+    
+
     g_t = rdflib.Graph('Sleepycat', identifier='default') # # Initialize a graph，指定数据库
     g_t.open('db') # 打开数据库并进行操作
 

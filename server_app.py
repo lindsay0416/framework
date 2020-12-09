@@ -132,7 +132,6 @@ def on_close(ws):
     print("Connection closed")
 
 def _run_browser():
-    print("open")
     port = 10001
     print("Connecting to port: ", port)
     ws = websocket.WebSocketApp(
@@ -155,7 +154,7 @@ def on_open(ws):
 
 
 if __name__ == '__main__':
-    
+    print("open")
     threading.Thread(target=_run_browser).start()
     time.sleep(2)
     SHARED['ws'].send('{"text": "begin"}')
@@ -166,7 +165,7 @@ if __name__ == '__main__':
     message_available.clear()
      
     app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.run(host='localhost', port=5000, debug=True)
+    app.run(host='localhost', port=5000, debug=False)
     print('Please connect to the link: http://{}:{}/'.format("localhost", 5000))
 
     
