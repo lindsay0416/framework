@@ -20,18 +20,12 @@ class OpenieUtility:
         return triples
 
 def main():
-    # input_text = "Human eat plants."
-    input_text = 'Barack Obama was born in Hawaii. Richard Manning wrote this sentence.'
+    input_text = "Human eat plants."
     text = PreprocessUtility.preprocess(input_text)
     print(text)
-    aa = OpenieUtility.sentence_to_triple(text)
+    aa = OpenieUtility.sentence_to_triple("Human eat plants.")
     print(aa)
+
 
 if __name__ == "__main__":
     main()
-
-
-
-
-    
-        

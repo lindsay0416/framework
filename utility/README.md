@@ -6,6 +6,10 @@
     ! brew install berkeley-db@4
     ! BERKELEYDB_DIR=$(brew --prefix berkeley-db@4) pip install bsddb3
 
+
+    On M1 CPU：
+    
+
 2. rdflib, plugin function: serialize, print the entire graph into Specified human readable format e.g. xml, n3, ttl
 
 

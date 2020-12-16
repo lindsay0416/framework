@@ -103,7 +103,6 @@ def setup_interactive(ws):
 def on_message(ws, message):
     """
     Prints the incoming message from the server.
-
     :param ws: a WebSocketApp
     :param message: json with 'text' field to be printed
     """
@@ -116,7 +115,6 @@ def on_message(ws, message):
 def on_error(ws, error):
     """
     Prints an error, if occurs.
-
     :param ws: WebSocketApp
     :param error: An error
     """
@@ -125,7 +123,6 @@ def on_error(ws, error):
 def on_close(ws):
     """
     Cleanup before closing connection.
-
     :param ws: WebSocketApp
     """
     # Reset color formatting if necessary
@@ -147,7 +144,6 @@ def _run_browser():
 def on_open(ws):
     """
     Starts a new thread that loops, taking user input and sending it to the websocket.
-
     :param ws: websocket.WebSocketApp that sends messages to a browser_manager
     """
     
@@ -167,7 +163,3 @@ if __name__ == '__main__':
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.run(host='localhost', port=5000, debug=False)
     print('Please connect to the link: http://{}:{}/'.format("localhost", 5000))
-
-    
-
-    

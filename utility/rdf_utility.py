@@ -93,9 +93,9 @@ class rdfUtility:
 
 
 def main():
-    ## nb is a namespace(unique Identifier)
-    # print("Triple under a specific namespace: ", rdf_test_Utility.getAlltriples("nb"))  
-    # print("TimeStamp: ", rdf_test_Utility.getProperty("nb","aa","Created")) # Timestamp
+    # # nb is a namespace(unique Identifier)
+    # print("Triple under a specific namespace: ", rdfUtility.getAlltriples("nb"))  
+    # print("TimeStamp: ", rdfUtility.getProperty("nb","aa","Created")) # Timestamp
     
     ## Domain  == AI
     # rdfUtility.add(("ai","stop","fear")) # Add triples with add method.
@@ -107,6 +107,8 @@ def main():
 
     g_t = rdflib.Graph('Sleepycat', identifier='default') # # Initialize a graph，指定数据库
     g_t.open('db') # 打开数据库并进行操作
+
+    rdfUtility.add(("hello world","is","conding languange"))
 
     # Print the entire Graph in the RDF ttl format
     print(g_t.serialize(format="turtle").decode("utf-8"))

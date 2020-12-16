@@ -28,3 +28,102 @@
 {"subject": "human", "relation": "eat", "object": "food"}
 {"subject": "human", "relation": "eat", "object": "food"}
 {"subject": "human", "relation": "eat", "object": "food"}
+{"subject": "human", "relation": "eat", "object": "food"}
+{"subject": "you", "relation": "would like", "object": "eat"}
+{"subject": "bacon", "relation": "be ingredient in", "object": "bacon explosion"}
+{"subject": "bacon", "relation": "be", "object": "ingredient"}
+{"subject": "ingredient", "relation": "is in", "object": "bacon explosion"}
+{"subject": "bacon", "relation": "be ingredient in", "object": "bacon explosion"}
+{"subject": "bacon", "relation": "be", "object": "ingredient"}
+{"subject": "ingredient", "relation": "is in", "object": "bacon explosion"}
+{"subject": "people", "relation": "love", "object": "bacon"}
+{"subject": "bacon explosion", "relation": "come from", "object": "united states"}
+{"subject": "bacon explosion", "relation": "come from", "object": "states"}
+{"subject": "people", "relation": "love", "object": "bacon explosion"}
+{"subject": "explosion", "relation": "be", "object": "main"}
+{"subject": "bacon explosion", "relation": "be", "object": "main course"}
+{"subject": "bacon explosion", "relation": "be", "object": "course"}
+{"subject": "bacon explosion", "relation": "ingredient of be", "object": "sausage"}
+{"subject": "ingredient", "relation": "be", "object": "sausage"}
+{"subject": "bacon explosion", "relation": "ingredient of be", "object": "sausage"}
+{"subject": "ingredient", "relation": "be", "object": "sausage"}
+{"subject": "sausage", "relation": "is in", "object": "ingredient"}
+{"subject": "ingredient", "relation": "is in", "object": "bacon explosion"}
+{"subject": "sausage", "relation": "be", "object": "ingredient"}
+{"subject": "sausage", "relation": "be ingredient of", "object": "bacon explosion"}
+{"subject": "s", "relation": "is in", "object": "bacon explosion"}
+{"subject": "sausage", "relation": "is in", "object": "bacon explosion"}
+{"subject": "sausages", "relation": "is in", "object": "bacon explosion"}
+{"subject": "bacon", "relation": "be in", "object": "bacon explosion"}
+{"subject": "country bacon explosion", "relation": "be", "object": "united states"}
+{"subject": "country bacon explosion", "relation": "come", "object": "united states"}
+{"subject": "country bacon explosion", "relation": "come", "object": "states"}
+{"subject": "country bacon explosion", "relation": "be", "object": "states"}
+{"subject": "sausage", "relation": "be", "object": "main"}
+{"subject": "sausage", "relation": "be", "object": "main ingredient"}
+{"subject": "sausage", "relation": "be main ingredient of", "object": "bacon explosion"}
+{"subject": "sausage", "relation": "be", "object": "ingredient"}
+{"subject": "sausage", "relation": "be ingredient of", "object": "bacon explosion"}
+{"subject": "sausage", "relation": "be in", "object": "bacon explosion"}
+{"subject": "bacon sandwich", "relation": "be", "object": "dish"}
+{"subject": "bacon sandwich", "relation": "be dish from", "object": "united kingdom"}
+{"subject": "bacon sandwich", "relation": "be dish from", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "be from", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "be from", "object": "united kingdom"}
+{"subject": "bacon sandwich", "relation": "be", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "come", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "come", "object": "united kingdom"}
+{"subject": "bacon sandwich", "relation": "be", "object": "united kingdom"}
+{"subject": "bacon sandwich", "relation": "be popular in", "object": "uk"}
+{"subject": "bacon sandwich", "relation": "be", "object": "popular"}
+{"subject": "human", "relation": "eat", "object": "bacon sandwich"}
+{"subject": "people", "relation": "eat", "object": "bacon sandwich"}
+{"subject": "british people", "relation": "eat", "object": "bacon sandwich"}
+{"subject": "bacon sandwich", "relation": "be", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "come", "object": "kingdom"}
+{"subject": "bacon sandwich", "relation": "come", "object": "united kingdom"}
+{"subject": "bacon sandwich", "relation": "be", "object": "united kingdom"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "people", "relation": "eat", "object": "sandwich"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be", "object": "very popular"}
+{"subject": "sandwiches", "relation": "be", "object": "popular"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be", "object": "very popular"}
+{"subject": "sandwiches", "relation": "be", "object": "popular"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be", "object": "very popular"}
+{"subject": "sandwiches", "relation": "be", "object": "popular"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be", "object": "very popular"}
+{"subject": "sandwiches", "relation": "be", "object": "popular"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be", "object": "very popular"}
+{"subject": "sandwiches", "relation": "be", "object": "popular"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "states"}
+{"subject": "sandwiches", "relation": "be popular in", "object": "united states"}
+{"subject": "sandwiches", "relation": "be very popular in", "object": "united states"}
+{"subject": "sandwich", "relation": "be very popular in", "object": "state"}
+{"subject": "sandwich", "relation": "be", "object": "popular"}
+{"subject": "sandwich", "relation": "be popular in", "object": "united state"}
+{"subject": "sandwich", "relation": "be popular in", "object": "state"}
+{"subject": "sandwich", "relation": "be", "object": "very popular"}
+{"subject": "sandwich", "relation": "be very popular in", "object": "united state"}
