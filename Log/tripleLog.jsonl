@@ -83,6 +83,7 @@
 {"subject": "bacon sandwich", "relation": "come", "object": "kingdom"}
 {"subject": "bacon sandwich", "relation": "come", "object": "united kingdom"}
 {"subject": "bacon sandwich", "relation": "be", "object": "united kingdom"}
+<<<<<<< HEAD
 {"subject": "people", "relation": "eat", "object": "sandwich"}
 {"subject": "people", "relation": "eat", "object": "sandwich"}
 {"subject": "people", "relation": "eat", "object": "sandwich"}
@@ -127,3 +128,5 @@
 {"subject": "sandwich", "relation": "be popular in", "object": "state"}
 {"subject": "sandwich", "relation": "be", "object": "very popular"}
 {"subject": "sandwich", "relation": "be very popular in", "object": "united state"}
+=======
+>>>>>>> d01b4c5c1d4081d87fe89742c66396d6f58320a5
