@@ -16,9 +16,12 @@ class rdfUtility:
         namespace = config.get("config","rdfNamespace")
         graph = rdflib.Graph('Sleepycat', identifier=namespace)
         graph.open('db', create=True)
-        s = rdflib.URIRef(triple[0])
-        p = rdflib.URIRef(triple[1])
-        o = rdflib.URIRef(triple[2])
+        # s = rdflib.URIRef(triple[0])
+        # p = rdflib.URIRef(triple[1])
+        # o = rdflib.URIRef(triple[2])
+        s = Literal(triple[0])
+        p = Literal(triple[1])
+        o = Literal(triple[2])
         #两个节点属性： 创建Unix timestamp，节点提到次数
         m = rdflib.URIRef("Mentions")
         c = rdflib.URIRef("Created")
@@ -104,11 +107,9 @@ def main():
 
     ## Domain  == Food
     
-
+    rdfUtility.add(("hello world","is","conding languange"))
     g_t = rdflib.Graph('Sleepycat', identifier='default') # # Initialize a graph，指定数据库
     g_t.open('db') # 打开数据库并进行操作
-
-    rdfUtility.add(("hello world","is","conding languange"))
 
     # Print the entire Graph in the RDF ttl format
     print(g_t.serialize(format="turtle").decode("utf-8"))
