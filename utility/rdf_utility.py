@@ -3,12 +3,13 @@ from rdflib import Graph
 from rdflib import URIRef, BNode, Literal
 from rdflib import Namespace
 import time
+import json
 import configparser
 
 
 # All the triples are stored in rdflib plugin database: BSDDB3
 class rdfUtility:
-
+    users = ["Jason","Lindsay"]
     @staticmethod
     def add(triple):
         config = configparser.ConfigParser()
@@ -81,41 +82,62 @@ class rdfUtility:
                 ss.append(str(subject))
                 ps.append(str(predicate))
                 os.append(str(object))
+        graph.close()
         return (ss,ps,os)
 
-
+    @staticmethod
     def getProperty(s,p):
         config = configparser.ConfigParser()
         config.read("Config/config.ini")
         namespace = config.get("config","rdfNamespace")
         graph = rdflib.Graph('Sleepycat', identifier=namespace)
         graph.open('db', create=True)
-        s = rdflib.URIRef(s)
+        s = Literal(s)
         p = rdflib.URIRef(p)
-        return graph.value(s,p)
+        value = graph.value(s,p)
+        graph.close()
+        return value
 
+    @staticmethod
+    def getAlldata():
+        data = {}
+        nodes = []
+        ns = []
+        es = []
+        for i,user in enumerate(rdfUtility.users):
+            graph = rdflib.Graph('Sleepycat', identifier=user)
+            graph.open('db', create=True)
+            for subject, predicate, object in graph:
+                s = str(subject)
+                if (s not in nodes):
+                    nodes.append(s)  
+                    n = {"label": s, "group": i}
+                    ns.append(n)
+            graph.close()
+        count = 0
+        for i,user in enumerate(rdfUtility.users):
+            graph = rdflib.Graph('Sleepycat', identifier=user)
+            graph.open('db', create=True)
+            for subject, predicate, object in graph:
+                s = str(subject)
+                p = str(predicate)
+                o = str(object)
+                if str(predicate) != "Mentions" and str(predicate) != "Created":
+                    e = {"id": count, "from": nodes.index(s), "to": nodes.index(o), "label": p, "group": i}
+                    es.append(e)
+                    count += 1     
+            graph.close()
+        data["nodes"] = ns
+        for i,n in enumerate(ns):
+            n["id"] = i
+        data["edges"] = es 
+        return data           
 
 def main():
-    # # nb is a namespace(unique Identifier)
-    # print("Triple under a specific namespace: ", rdfUtility.getAlltriples("nb"))  
-    # print("TimeStamp: ", rdfUtility.getProperty("nb","aa","Created")) # Timestamp
-    
-    ## Domain  == AI
-    # rdfUtility.add(("ai","stop","fear")) # Add triples with add method.
-    # rdfUtility.add(("battlefield","decide","benefit")) # Add triples with add method.
-    # rdfUtility.add(("siri","choose","photographs"))
-
-    ## Domain  == Food
-    
-    rdfUtility.add(("hello world","is","conding languange"))
-    g_t = rdflib.Graph('Sleepycat', identifier='default') # # Initialize a graph，指定数据库
-    g_t.open('db') # 打开数据库并进行操作
-
-    # Print the entire Graph in the RDF ttl format
-    print(g_t.serialize(format="turtle").decode("utf-8"))
-    
-    g_t.close()
-    #print(rdfUtility.getAlltriples())
+    #rdfUtility.getAlldata()
+    ct = int(rdfUtility.getProperty("fish","Created"))
+    now = int(time.time())
+    print(now-ct)
 
 if __name__ == "__main__":
     main()

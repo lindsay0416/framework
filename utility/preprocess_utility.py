@@ -57,6 +57,13 @@ class PreprocessUtility:
 
         return output
 
+def main():
+    print(PreprocessUtility.preprocess("Jaosn loves cats."))
+
+
+if __name__ == "__main__":
+    main()
+
 
 
 

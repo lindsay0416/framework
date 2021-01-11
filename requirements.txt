@@ -46,3 +46,17 @@ Unidecode==1.1.1
 websocket-client==0.56.0
 websocket-server==0.4
 jsonlines==1.2.0
+transformers==3.5.1
+Flask==1.1.2
+rdflib==5.0.0
+lxml==4.6.2
+gensim==4.0.0b0
+matplotlib==3.3.3
+stanford-openie==1.0.1
+datetime2==0.7.5
+spacy==2.3.5
+re101==0.4.0
+websocket-client==0.56.0
+websocket-server==0.4
+bs4==0.0.1
+tabulate==0.8.7

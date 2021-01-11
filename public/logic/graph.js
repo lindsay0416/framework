@@ -7,20 +7,20 @@ function startNetwork() {
 
     // create an array with nodes
     nodesArray = [
-        {id: 1, label: "Node 1"},
-        {id: 2, label: "Node 2"},
-        {id: 3, label: "Node 3"},
-        {id: 4, label: "Node 4"},
-        {id: 5, label: "Node 5"},
+        // {id: 1, label: "Node 1"},
+        // {id: 2, label: "Node 2"},
+        // {id: 3, label: "Node 3"},
+        // {id: 4, label: "Node 4"},
+        // {id: 5, label: "Node 5"},
     ];
     nodes = new vis.DataSet(nodesArray);
 
     // create an array with edges
     edgesArray = [
-        {id: "1", from: 1, to: 3},
-        {id: "2", from: 1, to: 2},
-        {id: "3", from: 2, to: 4},
-        {id: "4", from: 2, to: 5},
+        // {id: "1", from: 1, to: 3},
+        // {id: "2", from: 1, to: 2},
+        // {id: "3", from: 2, to: 4},
+        // {id: "4", from: 2, to: 5},
     ];
     edges = new vis.DataSet(edgesArray);
 
@@ -30,7 +30,8 @@ function startNetwork() {
         nodes: nodes,
         edges: edges,
     };
-    var options = {};
+    var options = {
+    };
     network = new vis.Network(container, data, options);
 }
 
@@ -94,5 +95,17 @@ function resetAll() {
     }
     startNetwork();
 }
+
+function updateData(data) {
+    nodes.clear();
+    edges.clear();
+    nodes.add(data["nodes"]);
+    edges.add(data["edges"]);
+}
+
+//牛皮 🐂 🍺
+function helloWorld() {
+    console.log("Hello World!")
+} 
 
 startNetwork();

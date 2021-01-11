@@ -1,4 +1,5 @@
 import configparser
+import time
 import os
 from gensim.models import Word2Vec
 import gensim
@@ -8,6 +9,7 @@ import re
 import nltk
 from nltk.corpus import stopwords
 import numpy as np
+from sklearn import preprocessing
 from numpy import dot
 from numpy.linalg import norm
 import scipy
@@ -199,60 +201,81 @@ class cosine_Similarity_Utility:
     #return: triple gaint most similarity score
     @staticmethod
     def triple_Similarity(inputTriple):
-        # try:
-        # #读取配置文件
-        # pro_dir = os.path.split(os.path.realpath(__file__))[0]
-        # config_path = os.path.join(pro_dir, "config.ini")
-        # #if not os.path.exists(config_path):print("无配置文件")
-        # config = configparser.ConfigParser()
-        # config.read(config_path)
-        # namespace = config.get("config","rdfNamespace")
-        ## prepare tranning, get data
-        #article_text = cosine_Similarity_Utility.getData()
-        #all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
-        ## load the pretrained model
-        # word2vec = cosine_Similarity_Utility.load_model()
-        # vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
+        try:
+            # #读取配置文件
+            # pro_dir = os.path.split(os.path.realpath(__file__))[0]
+            # config_path = os.path.join(pro_dir, "config.ini")
+            # #if not os.path.exists(config_path):print("无配置文件")
+            # config = configparser.ConfigParser()
+            # config.read(config_path)
+            # namespace = config.get("config","rdfNamespace")
+            ## prepare tranning, get data
+            #article_text = cosine_Similarity_Utility.getData()
+            #all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
+            ## load the pretrained model
+            # word2vec = cosine_Similarity_Utility.load_model()
+            # vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
 
-        score1 = []
-        score2 = []
-        score3 = []
-        final_Score_list = []
+            score1 = []
+            score2 = []
+            score3 = []
+            final_Score_list = []
+            
+            # get input subj, obj, rel
+            subj = inputTriple['subject']
+            obj = inputTriple['object']
+            rel = inputTriple['relation']
+
+            word_lists = rdfUtility.getAlltriples()
+            print("word_lists: ", word_lists)
+            Top_subj = cosine_Similarity_Utility.cosine_distance(subj,  word_lists[0])
+            Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
+            Top_rel = cosine_Similarity_Utility.cosine_distance(rel,  word_lists[1])  
+
         
-        # get input subj, obj, rel
-        subj = inputTriple['subject']
-        obj = inputTriple['object']
-        rel = inputTriple['relation']
+            for i in range(len(Top_subj)):
+                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(word_lists[0][i])
+                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(word_lists[2][i])
+                #计算总分
+                #final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
+                final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4 + subj_M + subj_time_c + obj_M + obj_time_c
+                final_Score_list.append(final_Score)
 
-        
+            #获的最高总分triple的index
+            a = np.array(final_Score_list)
+            idx = np.argmax(a)
+            max_triple = Top_subj[idx][0] + " | "  + Top_rel[idx][0] + " | " + Top_obj[idx][0]  
+            print("Triple ",max_triple,"gaint the highest final score: ",final_Score_list[idx])
+            
+            #ToDo: 通过实验，修改阈值。。。
+            if(final_Score_list[idx] < 0.01):
+                return None  
+            return max_triple 
+        except:
+            return None 
 
 
-        word_lists = rdfUtility.getAlltriples()
-        print("word_lists: ", word_lists)
-        Top_subj = cosine_Similarity_Utility.cosine_distance(subj,  word_lists[0])
-        Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
-        Top_rel = cosine_Similarity_Utility.cosine_distance(rel,  word_lists[1])  
+    @staticmethod
+    def extraScore(nodeName):
+        m = int(rdfUtility.getProperty(nodeName,"Mentions"))
+        # 创造这个节点时的时间
+        c = int(rdfUtility.getProperty(nodeName,"Created"))
+        # 现在的时间
+        n = int(time.time())
+        # 时间差
+        c = n - c
+        # 处理时间差，时间差 c 数值很大需要把它进行转换，先除以10000， 然后取倒数
+        time_c = (1/(c/10000))/100
 
-        for i in range(len(Top_subj)):
-            #计算总分
-            final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
-            final_Score_list.append(final_Score)
+        # 处理 提到的次数
+        M = m * 0.01
+        print(nodeName, " extraScore: ", M, "   ", time_c)
+        return M, time_c
 
-        #获的最高总分triple的index
-        a = np.array(final_Score_list)
-        idx = np.argmax(a)
-        max_triple = Top_subj[idx][0] + " | "  + Top_rel[idx][0] + " | " + Top_obj[idx][0]  
-        print("Triple ",max_triple,"gaint the highest final score: ",final_Score_list[idx])
-        #ToDo: 通过实验，修改阈值。。。
-        if(final_Score_list[idx] < 0.01):
-            return None  
-        return max_triple  
-        # except:
-        #     return None  
 
         
             
-def main():
+# def main():
     # # Train 输入新数据训练不同Domain的模型，并且存储预训练模型在本地。
     # article_text = cosine_Similarity_Utility.getData()
     # all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
@@ -269,15 +292,21 @@ def main():
 
     ## Test input Triple. 使用自定义的 input triple，测试预训练模型。 
     # inputTriple = {"subject": "human", "relation": "develop", "object": "ai"}
-    inputTriple = {"subject": "people", "relation": "eat", "object": "food"}
-    triple = cosine_Similarity_Utility.triple_Similarity(inputTriple)
-    print("triple: ", triple)
+    # inputTriple = {"subject": "Jason", "relation": "love", "object": "fish"}
+    # top_k_idx  = cosine_Similarity_Utility.triple_Similarity(inputTriple)
+    
     # embeddings_dict = Pretrained_GloVe_Utility.load_Vector()
     # aa = cosine_Similarity_Utility.calculate_vector("hello world", embeddings_dict)
     # print(aa)
+
+#     m, time_c = cosine_Similarity_Utility.extraScore("dog")
+    
+#     print("Mentions: ", m, "Time: ", time_c)
+
+
+# if __name__ == "__main__":
+#     main()
     
  
 
-if __name__ == "__main__":
-     main()
 

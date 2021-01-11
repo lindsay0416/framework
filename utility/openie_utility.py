@@ -15,15 +15,15 @@ class OpenieUtility:
         triples = []
         with StanfordOpenIE() as client:
             for triple in client.annotate(sentence):
-                print('|-', triple)
+                # print('|-', triple)
                 triples.append(triple)
         return triples
 
 def main():
-    input_text = "Human eat plants."
+    input_text = "jason love cat"
     text = PreprocessUtility.preprocess(input_text)
     print(text)
-    aa = OpenieUtility.sentence_to_triple("Human eat plants.")
+    aa = OpenieUtility.sentence_to_triple(input_text)
     print(aa)
 
 

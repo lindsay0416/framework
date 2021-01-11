@@ -14,3 +14,6 @@
 
 
 3. Namespace: 把数据库划分为多个空间。 e.g. Namespace: Person1, Namespace: Person2. 可以用于KG个性化存储，实现 KG personalization.
+
+
+4. 换 namespace: select Jason/ select Lindsay

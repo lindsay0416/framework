@@ -43,7 +43,7 @@ def give_response():
         user_input = request.form['user_input']
         #data preprocessing 
         inputList = user_input.split( )
-        #切换用户命令： Select<UserID(Domain Name)>
+        #切换用户命令： select<username>
         if len(inputList) == 2 and inputList[0] == "select":
             #读取配置文件
             conf = configparser.ConfigParser()
@@ -56,46 +56,63 @@ def give_response():
             fh = open(filepath ,'w')
             conf.write(fh)
             fh.close()
+            return "Selected user: "+inputList[1]
+        elif user_input == "init":
+            responseData = rdfUtility.getAlldata() # 用来显示KG的数据。
+            config = configparser.ConfigParser()
+            config.read("Config/config.ini")
+            namespace = config.get("config","rdfNamespace")
+            responseData["namespace"] = namespace
+            return responseData
         else:
+            responseText = ""
             # Handle user input 
             data = {}
-            # 输入数据清洗
-            data['text'] = PreprocessUtility.preprocess(user_input)
-            print("Input after data cleaning: ", data['text'])
+            data['text'] = user_input
+            print("User input: ", user_input)
             Utility.write_input_to_file(data)
             # OpenIE， Sentence --> triple[]
-            triples = OpenieUtility.sentence_to_triple(str(data['text']))
-            print("Triples from input: ",triples)
+            #in this case we only focus on the first triple generate from openie
+            triples = OpenieUtility.sentence_to_triple(user_input)
+            triple = triples[0]
+
+            triple["subject"] = PreprocessUtility.preprocess(triple["subject"]).strip()
+            triple["relation"] = PreprocessUtility.preprocess(triple["relation"]).strip()
+            triple["object"] = PreprocessUtility.preprocess(triple["object"]).strip()
+            print("Triple from input: ",triple)
             # write triples to file 
-            Utility.write_triple_to_file(triples)
-            for triple in triples:
-                # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
-                t = cosine_Similarity_Utility.triple_Similarity(triple)
-                if t != None:
-                    # 将找出的triple generate 为 text。作为response 返回给前端。
-                    tokenizer, model_saved = TextGenerationUtility.load_Model() 
-                    responseText = TextGenerationUtility.generate(t, model_saved, tokenizer) 
-                    print("Text generated from finded triple: ", responseText)
-                    #将输入的triples存入KG
-                    add_triples_KG(triples)
-                    return responseText
+            Utility.write_triple_to_file(triple)
+            
+            # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
+            t = cosine_Similarity_Utility.triple_Similarity(triple)
+            if t != None:
+                # 将找出的triple generate 为 text。作为response 返回给前端。
+                tokenizer, model_saved = TextGenerationUtility.load_Model() 
+                responseText = TextGenerationUtility.generate(t, model_saved, tokenizer) 
+                print("Text generated from finded triple: ", responseText)
+            else:    
+                # 如果没有在RDF DB中找到适合的Triple， 将请求转发给Parlai server.
+                print("Similar triple not founed in KG, transfering request...")
+                SHARED['ws'].send('{"text": "'+user_input+'"}')
+                message_available.wait()
+                responseText = new_message
+                message_available.clear()
             #将输入的triples存入KG
-            add_triples_KG(triples)
-            # 如果没有在RDF DB中找到适合的Triple， 将请求转发给Parlai server.
-            print("Similar triple not founed in KG, transfering request...")
-            SHARED['ws'].send('{"text": "'+user_input+'"}')
-            message_available.wait()
-            s = new_message
-            message_available.clear()
-            return s
-            # return jsonify(results)
+            add_triple_KG(triple)
+            responseData = rdfUtility.getAlldata() # 用来显示KG的数据。
+            responseData["Text"] = responseText
+            print(responseData)
+            return responseData
 
 
-def add_triples_KG(triples):
-    for triple in triples:
-        rdfUtility.add((triple["subject"],triple["relation"],triple["object"]))
+def add_triple_KG(triple):
+    rdfUtility.add((triple["subject"],triple["relation"],triple["object"]))
+    added_triple = triple["subject"] + " | "  + triple["relation"] + " | " + triple["object"]  
+    print("Triple ",added_triple,"added to KG.")
+
+def getRDFData():
+    rdfUtility.getAlldata()
         
-
 
 def setup_interactive(ws):
     SHARED['ws'] = ws
@@ -150,7 +167,6 @@ def on_open(ws):
 
 
 if __name__ == '__main__':
-    print("open")
     threading.Thread(target=_run_browser).start()
     time.sleep(2)
     SHARED['ws'].send('{"text": "begin"}')

@@ -7,11 +7,17 @@ $(function () {
     });
 });
 
+var username = "Lindsay";
+
 function sendMessage() {
     //get user's input from the html
     var userInput = $("#user-input").val();
     //send the user input to the screen
-    displayMessage(getPrefix('user') + userInput);
+    displayMessage(getPrefix(username) + userInput);
+    uiList = userInput.split(" ");
+    if(uiList.length == 2 && uiList[0] == "select"){
+        username = uiList[1];
+    }
     //clear the textbox
     $("#user-input").val("");
     //send the user input to the backend conversation engine
@@ -25,11 +31,18 @@ function sendMessage() {
     }
 
     $.post('/give_response', params, function (result) {
-        //stop spinning when getting the response from the server
-        stopSpinDiv('cba-forSpinningDiv');
         //show plain text - response from data
-        displayMessage(getPrefix('agent') + result);
-
+        console.log(result["Text"])
+        if(result["Text"] == null){
+            displayMessage(getPrefix('agent') + result);
+            stopSpinDiv('cba-forSpinningDiv');
+        }else{
+            displayMessage(getPrefix('agent') + result["Text"]);
+            updateData(result);
+            //stop spinning when getting the response from the server
+            stopSpinDiv('cba-forSpinningDiv');
+            console.log(result);
+        }
     }).fail(function (response) {
         console.log(response);
         stopSpinDiv('cba-forSpinningDiv');
@@ -56,5 +69,25 @@ function getPrefix(prefixType) {
     else if (prefixType == 'agent')
         return timeFlag + ' AGENT: ';
     else
-        return '';
+        // return '';
+        return timeFlag + ' ' + prefixType + ': ';
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    spinDiv('cba-forSpinningDiv');
+    var params = {
+        user_input: "init",
+        chatID: 'LindsayChat', //not in use
+        sessionID: 'aamas2021' //not in use
+    }
+    //alert("hello"); //test 牛皮
+    $.post('/give_response', params, function (result) {
+        displayMessage(getPrefix('agent') + "Welcome "+result["namespace"]+" !");
+        username = result["namespace"];
+        updateData(result);
+        stopSpinDiv('cba-forSpinningDiv');
+    }).fail(function (response) {
+        console.log(response);
+        stopSpinDiv('cba-forSpinningDiv');
+    });
+});
