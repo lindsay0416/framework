@@ -6,6 +6,7 @@ import threading
 import json
 import time
 import configparser
+import collections
 import sys
 sys.path.append(r'./utility')
 sys.path.append(r'./Response_model')
@@ -20,6 +21,7 @@ app = Flask(__name__)
 new_message = None
 message_available = threading.Event()
 SHARED = {}
+users = ['Jason', 'Lindsay']
 
 
 @app.route("/")
@@ -40,6 +42,9 @@ def give_response():
         print(s)
         return s
     if request.method == 'POST':
+        config = configparser.ConfigParser()
+        config.read("Config/config.ini")
+        namespace = config.get("config","rdfNamespace")
         user_input = request.form['user_input']
         #data preprocessing 
         inputList = user_input.split( )
@@ -59,13 +64,10 @@ def give_response():
             return "Selected user: "+inputList[1]
         elif user_input == "init":
             responseData = rdfUtility.getAlldata() # 用来显示KG的数据。
-            config = configparser.ConfigParser()
-            config.read("Config/config.ini")
-            namespace = config.get("config","rdfNamespace")
             responseData["namespace"] = namespace
             return responseData
         else:
-            responseText = ""
+            responseText = None
             # Handle user input 
             data = {}
             data['text'] = user_input
@@ -75,22 +77,29 @@ def give_response():
             #in this case we only focus on the first triple generate from openie
             triples = OpenieUtility.sentence_to_triple(user_input)
             triple = triples[0]
-
             triple["subject"] = PreprocessUtility.preprocess(triple["subject"]).strip()
             triple["relation"] = PreprocessUtility.preprocess(triple["relation"]).strip()
             triple["object"] = PreprocessUtility.preprocess(triple["object"]).strip()
             print("Triple from input: ",triple)
             # write triples to file 
             Utility.write_triple_to_file(triple)
-            
-            # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
-            t = cosine_Similarity_Utility.triple_Similarity(triple)
-            if t != None:
-                # 将找出的triple generate 为 text。作为response 返回给前端。
-                tokenizer, model_saved = TextGenerationUtility.load_Model() 
-                responseText = TextGenerationUtility.generate(t, model_saved, tokenizer) 
-                print("Text generated from finded triple: ", responseText)
-            else:    
+
+            # 把当前在用的namespace 换到list的第一个。
+            pos1, pos2  = 0, users.index(namespace)
+            cosine_Similarity_Utility.swapPositions(users, pos1, pos2)
+
+
+            for user in users:
+                print("users_List: ", users)
+                # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
+                t = cosine_Similarity_Utility.triple_Similarity(user, triple)
+                if t != None:
+                    # 将找出的triple generate 为 text。作为response 返回给前端。
+                    tokenizer, model_saved = TextGenerationUtility.load_Model() 
+                    responseText = user + " told me: " +TextGenerationUtility.generate(t, model_saved, tokenizer) 
+                    print("Text generated from finded triple in ", user, " KG: ", responseText)
+                    break
+            if responseText == None:    
                 # 如果没有在RDF DB中找到适合的Triple， 将请求转发给Parlai server.
                 print("Similar triple not founed in KG, transfering request...")
                 SHARED['ws'].send('{"text": "'+user_input+'"}')
@@ -103,7 +112,6 @@ def give_response():
             responseData["Text"] = responseText
             print(responseData)
             return responseData
-
 
 def add_triple_KG(triple):
     rdfUtility.add((triple["subject"],triple["relation"],triple["object"]))

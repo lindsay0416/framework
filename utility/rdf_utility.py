@@ -86,10 +86,36 @@ class rdfUtility:
         return (ss,ps,os)
 
     @staticmethod
+    def getAlltriplesByuser(namespace):
+        ss=[]
+        ps=[]
+        os=[]
+        graph = rdflib.Graph('Sleepycat', identifier=namespace)
+        graph.open('db', create=True)
+        #遍历整个graph除去predicate为Mentions和Created的triple
+        for subject, predicate, object in graph:
+            if str(predicate) != "Mentions" and str(predicate) != "Created":
+                ss.append(str(subject))
+                ps.append(str(predicate))
+                os.append(str(object))
+        graph.close()
+        return (ss,ps,os)
+
+    @staticmethod
     def getProperty(s,p):
         config = configparser.ConfigParser()
         config.read("Config/config.ini")
         namespace = config.get("config","rdfNamespace")
+        graph = rdflib.Graph('Sleepycat', identifier=namespace)
+        graph.open('db', create=True)
+        s = Literal(s)
+        p = rdflib.URIRef(p)
+        value = graph.value(s,p)
+        graph.close()
+        return value
+
+    @staticmethod
+    def getP(namespace,s,p):
         graph = rdflib.Graph('Sleepycat', identifier=namespace)
         graph.open('db', create=True)
         s = Literal(s)
@@ -114,6 +140,21 @@ class rdfUtility:
                     n = {"label": s, "group": i}
                     ns.append(n)
             graph.close()
+
+
+        for i,node in enumerate(nodes):
+            cts = []
+            for user in rdfUtility.users:
+                graph = rdflib.Graph('Sleepycat', identifier=user)
+                graph.open('db', create=True)
+
+                if rdfUtility.getP(user,node,"Created")!=None:
+                    cts.append(rdfUtility.getP(user,node,"Created"))
+                graph.close()
+            index = cts.index(min(cts))
+            ns[index]["group"] = index
+            
+
         count = 0
         for i,user in enumerate(rdfUtility.users):
             graph = rdflib.Graph('Sleepycat', identifier=user)
@@ -134,10 +175,16 @@ class rdfUtility:
         return data           
 
 def main():
-    #rdfUtility.getAlldata()
-    ct = int(rdfUtility.getProperty("fish","Created"))
-    now = int(time.time())
-    print(now-ct)
+    rdfUtility.getAlldata()
+    # ct = int(rdfUtility.getProperty("fish","Created"))
+    # now = int(time.time())
+    # print(now-ct)
+    # graph = rdflib.Graph('Sleepycat', identifier="Lindsay")
+    # graph.open('db', create=True)
+    # print(graph.serialize(format="turtle").decode("utf-8"))
+    # print(rdfUtility.getProperty("dog","Created"))
+    # graph.close()
+
 
 if __name__ == "__main__":
     main()

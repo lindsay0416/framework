@@ -200,7 +200,7 @@ class cosine_Similarity_Utility:
     #word_lists: rdfUtility.getAlltriples(namespace)
     #return: triple gaint most similarity score
     @staticmethod
-    def triple_Similarity(inputTriple):
+    def triple_Similarity(namespace, inputTriple):
         try:
             # #读取配置文件
             # pro_dir = os.path.split(os.path.realpath(__file__))[0]
@@ -226,7 +226,7 @@ class cosine_Similarity_Utility:
             obj = inputTriple['object']
             rel = inputTriple['relation']
 
-            word_lists = rdfUtility.getAlltriples()
+            word_lists = rdfUtility.getAlltriplesByuser(namespace)
             print("word_lists: ", word_lists)
             Top_subj = cosine_Similarity_Utility.cosine_distance(subj,  word_lists[0])
             Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
@@ -234,8 +234,8 @@ class cosine_Similarity_Utility:
 
         
             for i in range(len(Top_subj)):
-                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(word_lists[0][i])
-                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(word_lists[2][i])
+                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(namespace, word_lists[0][i])
+                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(namespace, word_lists[2][i])
                 #计算总分
                 #final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
                 final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4 + subj_M + subj_time_c + obj_M + obj_time_c
@@ -256,10 +256,10 @@ class cosine_Similarity_Utility:
 
 
     @staticmethod
-    def extraScore(nodeName):
-        m = int(rdfUtility.getProperty(nodeName,"Mentions"))
+    def extraScore(namespace, nodeName):
+        m = int(rdfUtility.getP(namespace,nodeName,"Mentions"))
         # 创造这个节点时的时间
-        c = int(rdfUtility.getProperty(nodeName,"Created"))
+        c = int(rdfUtility.getP(namespace,nodeName,"Created"))
         # 现在的时间
         n = int(time.time())
         # 时间差
@@ -273,6 +273,16 @@ class cosine_Similarity_Utility:
         return M, time_c
 
 
+
+    @staticmethod
+    # Swap function 
+    def swapPositions(list, pos1, pos2): 
+        
+        list[pos1], list[pos2] = list[pos2], list[pos1]
+        
+        return list
+        
+  
         
             
 # def main():
