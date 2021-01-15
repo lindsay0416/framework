@@ -1,3 +1,7 @@
+import rdflib
+from rdflib import Graph
+from rdflib import URIRef, BNode, Literal
+from rdflib import Namespace
 import configparser
 import time
 import os
@@ -232,15 +236,16 @@ class cosine_Similarity_Utility:
             Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
             Top_rel = cosine_Similarity_Utility.cosine_distance(rel,  word_lists[1])  
 
-        
+            graph = rdflib.Graph('Sleepycat', identifier=namespace)
+            graph.open('db', create=True)
             for i in range(len(Top_subj)):
-                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(namespace, word_lists[0][i])
-                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(namespace, word_lists[2][i])
+                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[0][i])
+                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[2][i])
                 #计算总分
                 #final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
                 final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4 + subj_M + subj_time_c + obj_M + obj_time_c
                 final_Score_list.append(final_Score)
-
+            graph.close()
             #获的最高总分triple的index
             a = np.array(final_Score_list)
             idx = np.argmax(a)
@@ -256,10 +261,10 @@ class cosine_Similarity_Utility:
 
 
     @staticmethod
-    def extraScore(namespace, nodeName):
-        m = int(rdfUtility.getP(namespace,nodeName,"Mentions"))
+    def extraScore(graph, nodeName):
+        m = int(rdfUtility.getPropertyByGraph(graph,nodeName,"Mentions"))
         # 创造这个节点时的时间
-        c = int(rdfUtility.getP(namespace,nodeName,"Created"))
+        c = int(rdfUtility.getPropertyByGraph(graph,nodeName,"Created"))
         # 现在的时间
         n = int(time.time())
         # 时间差
@@ -268,7 +273,7 @@ class cosine_Similarity_Utility:
         time_c = (1/(c/10000))/100
 
         # 处理 提到的次数
-        M = m * 0.01
+        M = m * 0.009
         print(nodeName, " extraScore: ", M, "   ", time_c)
         return M, time_c
 

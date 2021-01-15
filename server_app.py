@@ -65,6 +65,12 @@ def give_response():
         elif user_input == "init":
             responseData = rdfUtility.getAlldata() # 用来显示KG的数据。
             responseData["namespace"] = namespace
+            selection = {}
+            sns = []
+            ses = []
+            selection["nodes"] = sns
+            selection["edges"] = ses
+            responseData["selection"] = selection 
             return responseData
         else:
             responseText = None
@@ -88,15 +94,16 @@ def give_response():
             pos1, pos2  = 0, users.index(namespace)
             cosine_Similarity_Utility.swapPositions(users, pos1, pos2)
 
-
+            finded = None
             for user in users:
                 print("users_List: ", users)
                 # 计算 triple 相似度，并在RDF DB中找出需要返回的triple。
                 t = cosine_Similarity_Utility.triple_Similarity(user, triple)
                 if t != None:
+                    finded = t
                     # 将找出的triple generate 为 text。作为response 返回给前端。
                     tokenizer, model_saved = TextGenerationUtility.load_Model() 
-                    responseText = user + " told me: " +TextGenerationUtility.generate(t, model_saved, tokenizer) 
+                    responseText = user + " told me: " + TextGenerationUtility.generate(t, model_saved, tokenizer) 
                     print("Text generated from finded triple in ", user, " KG: ", responseText)
                     break
             if responseText == None:    
@@ -110,6 +117,21 @@ def give_response():
             add_triple_KG(triple)
             responseData = rdfUtility.getAlldata() # 用来显示KG的数据。
             responseData["Text"] = responseText
+            selection = {}
+            sns = []
+            ses = []
+            if finded != None:
+                finded = finded.split(" | ")
+                for node in responseData["nodes"]:
+                    if node["label"] == finded[0] or node["label"] == finded[2]:
+                        sns.append(node["id"])
+                for edge in responseData["edges"]:
+                    if edge["from"] == sns[0] and edge["to"] == sns[1]:
+                        ses.append(edge["id"])
+            selection["nodes"] = sns
+            selection["edges"] = ses
+            responseData["selection"] = selection 
+                        
             print(responseData)
             return responseData
 

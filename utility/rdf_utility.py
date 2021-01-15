@@ -5,6 +5,7 @@ from rdflib import Namespace
 import time
 import json
 import configparser
+import sys
 
 
 # All the triples are stored in rdflib plugin database: BSDDB3
@@ -115,6 +116,13 @@ class rdfUtility:
         return value
 
     @staticmethod
+    def getPropertyByGraph(graph,s,p):
+        s = Literal(s)
+        p = rdflib.URIRef(p)
+        value = graph.value(s,p)
+        return value
+
+    @staticmethod
     def getP(namespace,s,p):
         graph = rdflib.Graph('Sleepycat', identifier=namespace)
         graph.open('db', create=True)
@@ -126,39 +134,47 @@ class rdfUtility:
 
     @staticmethod
     def getAlldata():
+        graphs = []
+        for user in rdfUtility.users:
+            graph = rdflib.Graph('Sleepycat', identifier=user)
+            graph.open('db', create=True)
+            graphs.append(graph)
+
         data = {}
         nodes = []
         ns = []
         es = []
-        for i,user in enumerate(rdfUtility.users):
-            graph = rdflib.Graph('Sleepycat', identifier=user)
-            graph.open('db', create=True)
+        for i,graph in enumerate(graphs):
+            # graph = rdflib.Graph('Sleepycat', identifier=user)
+            # graph.open('db', create=True)
             for subject, predicate, object in graph:
                 s = str(subject)
                 if (s not in nodes):
                     nodes.append(s)  
                     n = {"label": s, "group": i}
                     ns.append(n)
-            graph.close()
+            # graph.close()
 
 
         for i,node in enumerate(nodes):
             cts = []
-            for user in rdfUtility.users:
-                graph = rdflib.Graph('Sleepycat', identifier=user)
-                graph.open('db', create=True)
-
-                if rdfUtility.getP(user,node,"Created")!=None:
-                    cts.append(rdfUtility.getP(user,node,"Created"))
-                graph.close()
+            for graph in graphs:
+                # graph = rdflib.Graph('Sleepycat', identifier=user)
+                # graph.open('db', create=True)
+                ct = rdfUtility.getPropertyByGraph(graph,node,"Created")
+                if ct!=None:
+                    cts.append(int(ct))
+                else:
+                    cts.append(sys.maxsize)
+                # graph.close()
             index = cts.index(min(cts))
-            ns[index]["group"] = index
+            ns[i]["group"] = index
             
 
         count = 0
-        for i,user in enumerate(rdfUtility.users):
-            graph = rdflib.Graph('Sleepycat', identifier=user)
-            graph.open('db', create=True)
+        for i,graph in enumerate(graphs):
+            # graph = rdflib.Graph('Sleepycat', identifier=user)
+            # graph.open('db', create=True)
             for subject, predicate, object in graph:
                 s = str(subject)
                 p = str(predicate)
@@ -167,15 +183,19 @@ class rdfUtility:
                     e = {"id": count, "from": nodes.index(s), "to": nodes.index(o), "label": p, "group": i}
                     es.append(e)
                     count += 1     
-            graph.close()
+            # graph.close()
         data["nodes"] = ns
         for i,n in enumerate(ns):
             n["id"] = i
         data["edges"] = es 
+
+        for graph in graphs:
+            graph.close()
+
         return data           
 
 def main():
-    rdfUtility.getAlldata()
+    print(rdfUtility.getAlldata())
     # ct = int(rdfUtility.getProperty("fish","Created"))
     # now = int(time.time())
     # print(now-ct)
@@ -184,6 +204,17 @@ def main():
     # print(graph.serialize(format="turtle").decode("utf-8"))
     # print(rdfUtility.getProperty("dog","Created"))
     # graph.close()
+    # graphs = []
+    # for user in rdfUtility.users:
+    #     graph = rdflib.Graph('Sleepycat', identifier=user)
+    #     graph.open('db', create=True)
+    #     graphs.append(graph)
+    # for graph in graphs:
+    #     print(rdfUtility.getPropertyByGraph(graph,"study","Created"))
+    # for graph in graphs:
+    #     graph.close()
+
+    
 
 
 if __name__ == "__main__":

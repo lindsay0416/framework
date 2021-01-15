@@ -101,6 +101,11 @@ function updateData(data) {
     edges.clear();
     nodes.add(data["nodes"]);
     edges.add(data["edges"]);
+    //network.setSelection(data["selection"]["nodes"]);
+    //network.selectEdges(data["selection"]["edges"]);
+    ops = {highlightEdges: false}
+    network.setSelection(data["selection"],ops)
+    console.log(data["selection"])
 }
 
 //牛皮 🐂 🍺
