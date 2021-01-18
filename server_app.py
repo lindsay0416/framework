@@ -93,6 +93,8 @@ def give_response():
             # 把当前在用的namespace 换到list的第一个。
             pos1, pos2  = 0, users.index(namespace)
             cosine_Similarity_Utility.swapPositions(users, pos1, pos2)
+            print("users_List: ", users)
+
 
             finded = None
             for user in users:

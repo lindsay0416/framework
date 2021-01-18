@@ -205,59 +205,60 @@ class cosine_Similarity_Utility:
     #return: triple gaint most similarity score
     @staticmethod
     def triple_Similarity(namespace, inputTriple):
-        try:
-            # #读取配置文件
-            # pro_dir = os.path.split(os.path.realpath(__file__))[0]
-            # config_path = os.path.join(pro_dir, "config.ini")
-            # #if not os.path.exists(config_path):print("无配置文件")
-            # config = configparser.ConfigParser()
-            # config.read(config_path)
-            # namespace = config.get("config","rdfNamespace")
-            ## prepare tranning, get data
-            #article_text = cosine_Similarity_Utility.getData()
-            #all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
-            ## load the pretrained model
-            # word2vec = cosine_Similarity_Utility.load_model()
-            # vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
+        # #读取配置文件
+        # pro_dir = os.path.split(os.path.realpath(__file__))[0]
+        # config_path = os.path.join(pro_dir, "config.ini")
+        # #if not os.path.exists(config_path):print("无配置文件")
+        # config = configparser.ConfigParser()
+        # config.read(config_path)
+        # namespace = config.get("config","rdfNamespace")
+        ## prepare tranning, get data
+        #article_text = cosine_Similarity_Utility.getData()
+        #all_words = cosine_Similarity_Utility.textPreprocessing(article_text)
+        ## load the pretrained model
+        # word2vec = cosine_Similarity_Utility.load_model()
+        # vector_all, word_list, vocabulary = cosine_Similarity_Utility.get_wordVec(word2vec)
 
-            score1 = []
-            score2 = []
-            score3 = []
-            final_Score_list = []
-            
-            # get input subj, obj, rel
-            subj = inputTriple['subject']
-            obj = inputTriple['object']
-            rel = inputTriple['relation']
+        score1 = []
+        score2 = []
+        score3 = []
+        final_Score_list = []
+        
+        # get input subj, obj, rel
+        subj = inputTriple['subject']
+        obj = inputTriple['object']
+        rel = inputTriple['relation']
 
-            word_lists = rdfUtility.getAlltriplesByuser(namespace)
-            print("word_lists: ", word_lists)
-            Top_subj = cosine_Similarity_Utility.cosine_distance(subj,  word_lists[0])
-            Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
-            Top_rel = cosine_Similarity_Utility.cosine_distance(rel,  word_lists[1])  
+        word_lists = rdfUtility.getAlltriplesByuser(namespace)
+        print("word_lists: ", word_lists)
+        Top_subj = cosine_Similarity_Utility.cosine_distance(subj,  word_lists[0])
+        Top_obj = cosine_Similarity_Utility.cosine_distance(obj,  word_lists[2])
+        Top_rel = cosine_Similarity_Utility.cosine_distance(rel,  word_lists[1])  
 
-            graph = rdflib.Graph('Sleepycat', identifier=namespace)
-            graph.open('db', create=True)
-            for i in range(len(Top_subj)):
-                subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[0][i])
-                obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[2][i])
-                #计算总分
-                #final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
-                final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4 + subj_M + subj_time_c + obj_M + obj_time_c
-                final_Score_list.append(final_Score)
-            graph.close()
+        graph = rdflib.Graph('Sleepycat', identifier=namespace)
+        graph.open('db', create=True)
+        for i in range(len(Top_subj)):
+            subj_M, subj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[0][i])
+            obj_M, obj_time_c = cosine_Similarity_Utility.extraScore(graph, word_lists[2][i])
+            #计算总分
+            #final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4
+            final_Score = Top_subj[i][1] * 0.3 + Top_obj[i][1] * 0.3 + Top_rel[i][1] * 0.4 + subj_M + subj_time_c + obj_M + obj_time_c
+            final_Score_list.append(final_Score)
+        graph.close()
+        if len(final_Score_list) > 0:
             #获的最高总分triple的index
             a = np.array(final_Score_list)
             idx = np.argmax(a)
             max_triple = Top_subj[idx][0] + " | "  + Top_rel[idx][0] + " | " + Top_obj[idx][0]  
             print("Triple ",max_triple,"gaint the highest final score: ",final_Score_list[idx])
-            
-            #ToDo: 通过实验，修改阈值。。。
-            if(final_Score_list[idx] < 0.01):
-                return None  
-            return max_triple 
-        except:
-            return None 
+        else:
+            print("Empty KG...")
+            return None  
+        
+        #ToDo: 通过实验，修改阈值。。。
+        if(final_Score_list[idx] < 0.9):
+            return None  
+        return max_triple 
 
 
     @staticmethod

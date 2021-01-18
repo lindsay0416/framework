@@ -21,14 +21,7 @@ class OpenieUtility:
         return triples
 
 def main():
-    input_text = "Jason lives in Auckland."
-    # text = PreprocessUtility.preprocess(input_text)
-    # print(text)
-    aa = OpenieUtility.sentence_to_triple(input_text)
-    print(aa)
-    input_text = "Lindsay lives in Auckland."
-    aa = OpenieUtility.sentence_to_triple(input_text)
-    input_text = "Dazhu is jason's cat."
+    input_text = "Billy‘s genre is rap music."
     aa = OpenieUtility.sentence_to_triple(input_text)
     print(aa)
 
