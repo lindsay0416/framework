@@ -21,7 +21,7 @@ class OpenieUtility:
         return triples
 
 def main():
-    input_text = "Billy‘s genre is rap music."
+    input_text = "Almond is brown colour"
     aa = OpenieUtility.sentence_to_triple(input_text)
     print(aa)
 
